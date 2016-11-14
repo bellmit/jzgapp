@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/item_buycar_detail_config_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/jzg_common_size"
+        android:textColor="@color/text_title_black"
+        android:singleLine="true"
+        android:text="6年3个月"/>
+    <TextView
+        android:id="@+id/item_buycar_detail_config_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/jzg_common_xsmall_size"
+        android:textColor="@color/grey_for_valuation"
+        android:singleLine="true"
+        android:text="上牌时间"/>
+
+</LinearLayout>

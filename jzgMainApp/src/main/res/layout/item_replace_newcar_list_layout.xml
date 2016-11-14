@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="110dp"
+        android:layout_height="90dp"
+        android:layout_margin="5dp" >
+
+        <ImageView
+            android:id="@+id/img_item_new_car_carpicpath"
+            android:layout_width="110dp"
+            android:layout_height="90dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/jingzhengu_moren" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_item_new_car_carfullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textColor="@color/grey3" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp" >
+
+            <Spinner
+                android:id="@+id/spinner_item_new_car_for_replace_choose"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:minHeight="20dp"
+                android:textDirection="1" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/go"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:gravity="bottom" >
+
+            <TextView
+                android:id="@+id/tv_item_new_car_carprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentBottom="true"
+                android:text="9.32-16.26万"
+                android:textColor="@color/text_red" />
+
+            <TextView
+                android:id="@+id/tv_item_new_car_checked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@drawable/replace_apply_bg"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:text="申请"
+                android:textColor="@color/text_blue" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

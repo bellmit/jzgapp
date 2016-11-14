@@ -1,0 +1,151 @@
+<resources>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="@android:style/Theme.NoTitleBar"></style>
+
+    <!-- 发现 筛选Pop字体深灰Style -->
+    <style name="view_discover_filter_textStyle" parent="@style/common_grey_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!-- 发现 筛选Pop字体浅灰Style -->
+    <style name="view_discover_light_grey" parent="@style/common_light_grey_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 透明 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 模糊 -->
+    </style>
+
+    <!-- 标准文本输入框字体样式①输入字体为深灰，hint字体为浅灰 -->
+    <style name="common_edit_input_style" parent="@style/common_text_size">
+        <item name="android:textColor">@color/dark_grey_text</item>
+        <item name="android:textColorHint">@color/light_grey_text</item>
+    </style>
+
+    <!-- 标准文本输入框字体样式②输入字体为浅灰，hint字体为浅灰 -->
+    <style name="common_edit_input_style_2" parent="@style/common_text_size">
+        <item name="android:textColor">@color/light_grey_text</item>
+        <item name="android:textColorHint">@color/light_grey_text</item>
+    </style>
+
+    <!-- 标准浅蓝文本 -->
+    <style name="common_light_blue_text_style" parent="@style/common_text_size">
+        <item name="android:textColor">@color/blue_wathet_textcolor</item>
+    </style>
+
+    <!-- 标准白色文本 -->
+    <style name="common_white_text_style" parent="@style/common_text_size">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- 标准橙色文本 -->
+    <style name="common_orange_text_style" parent="@style/common_text_size">
+        <item name="android:textColor">@color/orange2</item>
+    </style>
+
+    <!-- 标准浅灰色文本 -->
+    <style name="common_light_grey_text_style" parent="@style/common_text_size">
+        <item name="android:textColor">@color/light_grey_text</item>
+    </style>
+
+    <!-- 标准深灰色文本 -->
+    <style name="common_grey_text_style" parent="@style/common_text_size">
+        <item name="android:textColor">@color/dark_grey_text</item>
+    </style>
+
+    <!-- 小深灰色文本 -->
+    <style name="small_dark_grey_text_style" parent="@style/small_text_size">
+        <item name="android:textColor">@color/dark_grey_text</item>
+    </style>
+
+    <!-- 小浅灰色文本 -->
+    <style name="small_grey_text_style" parent="@style/small_text_size">
+        <item name="android:textColor">@color/light_grey_text</item>
+    </style>
+
+    <!-- 小白色文本 -->
+    <style name="small_white_text_style" parent="@style/small_text_size">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- 小橙色文本 -->
+    <style name="small_orange_text_style" parent="@style/small_text_size">
+        <item name="android:textColor">@color/orange2</item>
+    </style>
+
+    <!-- 小浅蓝文本 -->
+    <style name="small_light_blue_text_style" parent="@style/small_text_size">
+        <item name="android:textColor">@color/blue_wathet_textcolor</item>
+    </style>
+    <!-- 小绿色文本 -->
+    <style name="small_green_text_style" parent="@style/small_text_size">
+        <item name="android:textColor">@color/green_textcolor</item>
+    </style>
+    <!-- 超大文字绿色色文本 -->
+    <style name="xlarge_green_text_style" parent="@style/xlarge_text_size">
+        <item name="android:textColor">@color/green_textcolor</item>
+    </style>
+    <!-- 大文字橙色文本 -->
+    <style name="large_orange_text_style" parent="@style/large_text_size">
+        <item name="android:textColor">@color/orange2</item>
+    </style>
+    <!-- 超大文字橙色文本 -->
+    <style name="xlarge_orange_text_style" parent="@style/xlarge_text_size">
+        <item name="android:textColor">@color/orange2</item>
+    </style>
+
+    <!-- 标准文本字体大小 -->
+    <style name="common_text_size">
+        <item name="android:textSize">@dimen/jzg_common_size</item>
+    </style>
+
+    <!-- 大文本字体大小 -->
+    <style name="large_text_size">
+        <item name="android:textSize">@dimen/jzg_remit_btn_size</item>
+    </style>
+
+    <!-- 超大文本字体大小 -->
+    <style name="xlarge_text_size">
+        <item name="android:textSize">@dimen/jzg_title_size</item>
+    </style>
+
+    <!-- 小文本字体大小 -->
+    <style name="small_text_size">
+        <item name="android:textSize">@dimen/jzg_common_small_size</item>
+    </style>
+
+    <style name="dialog_hint" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/dialog_bg_half_color</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+   
+    <!-- 浮动EditText 样式 -->
+    <style name="TextAppearance.YourApp.FloatLabel" parent="android:TextAppearance.Small">
+        <item name="android:textColor">@color/light_grey_text</item>
+        <item name="android:textSize">@dimen/floating_label_text_size</item>
+    </style>
+    <!-- <item name="android:textStyle">bold</item> -->
+
+
+   
+
+</resources>

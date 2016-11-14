@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dip"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/item_valuation_history_icon"
+            android:layout_width="72dip"
+            android:layout_height="54dip"
+            android:layout_marginLeft="5dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/jingzhengu_moren"/>
+        <ImageView
+            android:id="@+id/item_valuation_history_jt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/go"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dip"
+            android:layout_toLeftOf="@id/item_valuation_history_jt"
+            android:layout_toRightOf="@id/item_valuation_history_icon">
+            <TextView
+                android:id="@+id/item_valuation_history_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="奥迪 Q7 3.0T 自动 手自一体时尚型"
+                style="@style/common_text_size"
+                android:textColor="@color/text_item_title_black"/>
+            <TextView
+                android:id="@+id/item_valuation_history_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="2016.5.31  进行买车估值"
+                android:layout_marginTop="5dip"
+                style="@style/small_grey_text_style"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

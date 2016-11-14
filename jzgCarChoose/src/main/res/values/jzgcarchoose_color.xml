@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 公共色值 -->
+    <!-- 横线颜色值 -->
+    <color name="line_bg">#ffD7DFE8</color>
+    <!-- 标题背景色值-->
+    <color name="title_bg">#ff31455F</color>
+     
+    <!-- 界面背景色值 -->
+    <color name="main_bg">#fff2f5f8</color>
+    <!-- <color name="main_bg">#f2f5f8</color> -->
+    <!-- 浅蓝色文字颜色 -->
+    <color name="blue_wathet_textcolor">#ff4587C3</color>
+    
+    <!-- 绿色文字颜色 -->
+    <color name="green_textcolor">#20B2AA</color>
+    <!-- 背景颜色 -->
+    <color name="bg_grey">#F2F5F7</color>
+    <!-- 顶部颜色 -->
+    <color name="top_color">#ff667788</color>
+    <!-- 置换 -->
+    <color name="replace_blue1_color">#ff4587c3</color>
+
+    <!-- 发现 -->
+    <!-- 文字颜色 -->
+    <color name="dialog_text_color">#ff31455f</color>
+    <!-- dialog背景颜色 -->
+    <color name="dialog_bg_half_color">#99000000</color>
+
+    <!-- 二手车列表item Title字体颜色 黑 -->
+    <color name="text_item_title_black">#2B4659</color>
+    <!-- 二手车列表item 字体颜色 灰色 -->
+    <color name="text_item_title_grey">#B5BBBF</color>
+    <!-- 二手车列表item 字体颜色 橙色 -->
+    <color name="text_item_title_orange">#FF6924</color>
+    <!-- 二手车筛选字体颜色  灰色 -->
+    <color name="text_listtitle_grey">#888580</color>
+
+    <!-- 评估背景颜色 -->
+    <color name="valuation_bg">#ff123456</color>
+
+    <!-- 二手车列表item  商家背景颜色 蓝色 -->
+    <color name="bg_item_bule">#008AE3</color>
+    <!-- 二手车列表item  商家背景颜色 绿色 -->
+    <color name="bg_item_green">#00D736</color>
+
+    <!-- 文本输入框输入字体颜色 -->
+    <color name="dark_grey_text">#31455f</color>
+    <!-- 浅灰色text -->
+    <color name="light_grey_text">#b4bbc4</color>
+    <color name="title">#f5f5f5</color>
+    <color name="grey1">#666666</color>
+    <color name="grey2">#ededed</color>
+    <color name="grey3">#333333</color>
+    <color name="grey4">#999999</color>
+    <color name="white">#FFFFFF</color>
+    <color name="categroy_title">#3399cc</color>
+    <color name="orange2">#FF6400</color>
+    <color name="list_click">#FFCC00</color>
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+
+    <!-- 单选item字体颜色 -->
+    <color name="radio_item_text_color">#FF000000</color>
+    <!-- 表格奇数灰色行 -->
+    <color name="table_row_grey_color">#F2F5F7</color>
+    <!-- 表格合计绿色行 -->
+    <color name="table_row_green_color">#00BA4D</color>
+    <!-- umeng -->
+    <color name="body_text_1">#ff000000</color>
+    <color name="body_text_2">#99000000</color>
+    <color name="body_text_disabled">#66000000</color>
+    <color name="body_text_1_inverse">#ffffffff</color>
+    <color name="body_text_2_inverse">#99ffffff</color>
+    <color name="accent_1">#ff29549f</color>
+    <color name="hyperlink">#ffff549f</color>
+    <color name="background_1">#ffffffff</color>
+    <color name="whats_on_separator">#4d000000</color>
+    <color name="all_track_color">#ff222222</color>
+    <color name="block_column_1">#ff0fabff</color>
+    <color name="block_column_2">#ffdf1831</color>
+    <color name="block_column_3">#ff009939</color>
+    <color name="transparencyaa">#BF000000</color>
+
+</resources>

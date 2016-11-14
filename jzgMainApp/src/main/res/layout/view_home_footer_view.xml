@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/background" >
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:paddingTop="13dp"
+		android:paddingBottom="23dp"
+		android:layout_centerHorizontal="true"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+		<View
+			android:layout_width="80dp"
+			android:layout_height="2px"
+			android:background="#999999"/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:includeFontPadding="false"
+			android:text="每日更新，敬请关注"
+			android:textColor="#666666"
+			android:textSize="11sp" />
+		<View
+			android:layout_width="80dp"
+			android:layout_height="2px"
+			android:background="#999999"/>
+	</LinearLayout>
+</RelativeLayout>

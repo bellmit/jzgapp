@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical" >
+
+    <com.jzg.jzgoto.phone.view.replacecar.MyNoClickLinearLayout
+        android:id="@+id/linear_replace_main_to_brand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/small_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="品牌"
+            android:textStyle="bold"
+            android:textSize="@dimen/jzg_common_small_size"
+            android:textColor="@color/text_filter_darkgrey" />
+
+        <EditText
+            style="@style/edit_sell_bg"
+            android:id="@+id/edit_replace_main_to_brand_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:singleLine="true"
+            android:paddingRight="5dp"
+            android:hint="请选择品牌"
+            android:textColor="@color/grey3" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/go" />
+    </com.jzg.jzgoto.phone.view.replacecar.MyNoClickLinearLayout>
+
+    <com.jzg.jzgoto.phone.view.replacecar.MyNoClickLinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/linear_replace_main_to_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/small_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="置换城市"
+            android:textStyle="bold"
+            android:textSize="@dimen/jzg_common_small_size"
+            android:textColor="@color/text_filter_darkgrey" />
+
+        <EditText
+            style="@style/edit_sell_bg"
+            android:id="@+id/edit_replace_main_to_address_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:singleLine="true"
+            android:paddingRight="5dp"
+            android:hint="请选择城市"
+            android:textColor="@color/grey3" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/go" />
+    </com.jzg.jzgoto.phone.view.replacecar.MyNoClickLinearLayout>
+
+    <FrameLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/frame_replace_main_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/frame_replace_main_gearbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/small_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="国别"
+            android:textStyle="bold"
+            android:textSize="@dimen/jzg_common_small_size"
+            android:textColor="@color/text_filter_darkgrey"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/small_text_size"
+                android:id="@+id/tv_replace_main_to_country_one"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/sell_sigle_choose_bg"
+                android:gravity="center"
+                android:text="不限"
+                android:textColor="@color/sell_text_color_checked" />
+
+            <TextView
+                style="@style/small_text_size"
+                android:id="@+id/tv_replace_main_to_country_two"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/sell_sigle_choose_bg"
+                android:gravity="center"
+                android:text="国产"
+                android:textColor="@color/sell_text_color_checked" />
+
+            <TextView
+                style="@style/small_text_size"
+                android:id="@+id/tv_replace_main_to_country_three"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/sell_sigle_choose_bg"
+                android:gravity="center"
+                android:text="合资"
+                android:textColor="@color/sell_text_color_checked" />
+
+            <TextView
+                style="@style/small_text_size"
+                android:id="@+id/tv_replace_main_to_country_four"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/sell_sigle_choose_bg"
+                android:gravity="center"
+                android:text="进口"
+                android:textColor="@color/sell_text_color_checked" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        style="@style/submit_btn_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:onClick="onSubmitAll"
+        android:text="提交" />
+
+</LinearLayout>

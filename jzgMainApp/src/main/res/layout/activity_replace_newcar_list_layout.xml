@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <com.jzg.jzgoto.phone.view.shared.HeadBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:barTitle="新车展示" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/linear_replace_new_car_title_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_new_car_title_one"
+                    style="@style/common_text_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="热门品牌"
+                    android:textColor="@color/grey3" />
+
+                <ImageView
+                    android:id="@+id/img_replace_new_car_title_one_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_xjt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_replace_new_car_title_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/common_text_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="车系不限"
+                    android:textColor="@color/grey3" />
+
+                <ImageView
+                    android:id="@+id/img_replace_new_car_title_two_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_xjt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_replace_new_car_title_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/common_text_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text=" 价格 "
+                    android:textColor="@color/grey3" />
+
+                <ImageView
+                    android:id="@+id/img_replace_new_car_title_three_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_xjt" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_for_pop"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_bg"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.jzg.jzgoto.phone.components.self.discover.xlistview.XListView
+                android:id="@+id/xlist_replace_new_car_list_show"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@drawable/long_line"></com.jzg.jzgoto.phone.components.self.discover.xlistview.XListView>
+
+            <TextView
+                android:id="@+id/tv_replace_new_car_list_empty"
+                style="@style/common_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:drawableTop="@drawable/wushuju"
+                android:text="暂无相关数据~"
+                android:textColor="@color/grey3" />
+
+            <TextView
+                android:id="@+id/tv_replace_new_car_list_count"
+                style="@style/common_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="80dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/duibibtn"
+                android:gravity="center"
+                android:text="申请"
+                android:textColor="@android:color/white" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

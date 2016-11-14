@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/common_listview_selector">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/view_message_title_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:text="消息标题"
+            android:textColor="#3c3c3c"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/view_message_time_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:includeFontPadding="false"
+            android:text="11.06 12:00"
+            android:textColor="#aaaaaa"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/view_message_description_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:maxLines="3"
+                android:singleLine="false"
+                android:text="消息内容"
+                android:textColor="#aaaaaa"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/view_message_description_expand_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="消息内容"
+                android:textColor="#aaaaaa"
+                android:textSize="12sp"
+                android:layout_toRightOf="@+id/view_message_description_textview"
+                android:visibility="gone" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/btn_show_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:includeFontPadding="false"
+            android:gravity="right"
+            android:text="全部"
+            android:textColor="#4b92ec"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_item_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/common_line_bg" />
+
+</RelativeLayout>

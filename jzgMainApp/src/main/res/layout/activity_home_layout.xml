@@ -1,0 +1,127 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/content_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/tab_item_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_fragment_header_height"
+            android:layout_alignParentTop="true"
+            android:background="#305ba4">
+
+            <TextView
+                android:id="@+id/btn_choosecity"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:includeFontPadding="false"
+                android:gravity="center"
+                android:text="北京"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/icon_xjt"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/jzg_common_small_size" />
+
+            <RelativeLayout
+                android:id="@+id/view_home_tab_container"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="142dp">
+
+                <TextView
+                    android:id="@+id/btn_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:includeFontPadding="false"
+                    android:gravity="center"
+                    android:text="首页"
+                    android:textColor="@color/home_tab_text_color_selector"
+                    android:textSize="@dimen/home_fragment_tab_normal_text_size" />
+                <View
+                    android:id="@+id/view_home_tab_indicator"
+                    android:layout_width="20dp"
+                    android:layout_height="3dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="4dp"
+                    android:background="#ffffff"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/view_carmanager_tab_container"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/view_home_tab_container"
+                android:layout_marginLeft="27dp">
+
+                <TextView
+                    android:id="@+id/btn_carmanager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:includeFontPadding="false"
+                    android:gravity="center"
+                    android:text="车管家"
+                    android:textColor="@color/home_tab_text_color_selector"
+                    android:textSize="@dimen/home_fragment_tab_normal_text_size" />
+
+                <View
+                    android:id="@+id/view_carmanager_tab_indicator"
+                    android:layout_width="20dp"
+                    android:layout_height="3dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="4dp"
+                    android:background="#ffffff"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp">
+                <ImageView
+                    android:id="@+id/btn_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_home_xiaoxi"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/menu_frame"
+        android:layout_width="295dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:clickable="true"
+        android:background="@color/background">
+        <fragment
+            android:id="@+id/user_center_fragment"
+            android:name="com.jzg.jzgoto.phone.fragment.user.UserCenterFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </fragment>
+    </FrameLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

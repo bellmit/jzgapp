@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <com.jzg.jzgoto.phone.view.shared.HeadBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:barTitle="保值率排行"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_for_valuation" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/linear_hedge_ratio_city"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_hedge_ratio_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="北京"
+                        android:textColor="@color/text_for_valuation" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_xjt" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/line_for_valuation" />
+
+                <LinearLayout
+                    android:id="@+id/linear_hedge_ratio_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_hedge_ratio_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="微型车"
+                        android:textColor="@color/text_for_valuation" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_xjt" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v_hedge_ratio_popshow"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_for_valuation" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/bg_for_valuation" />
+
+            <com.jzg.jzgoto.phone.components.self.discover.xlistview.XListView
+                android:id="@+id/list_hedge_ratio_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@null"
+                android:divider="@null"
+                android:drawSelectorOnTop="true" >
+            </com.jzg.jzgoto.phone.components.self.discover.xlistview.XListView>
+            <!-- 车辆所在城市无保值率数据，请手动选择城市 -->
+
+            <RelativeLayout
+                android:id="@+id/relative_hedge_ratio_listnull"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_hedge_ratio_listnull"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:drawableTop="@drawable/wushuju"
+                    android:text="暂无相关数据"
+                    android:textColor="@color/text_for_valuation" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

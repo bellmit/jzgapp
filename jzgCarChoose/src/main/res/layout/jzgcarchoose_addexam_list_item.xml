@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/jzgcarchoose_layout_click" >
+
+    <ImageView
+        android:id="@+id/addexam_list_icon"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:src="@drawable/jzgcarchoose_def_img_2x"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/addexam_list_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="8dip"
+        android:layout_toRightOf="@id/addexam_list_icon"
+        android:layout_marginLeft="2dip"
+        android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/addexam_list_item_priceHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dip"
+        android:paddingBottom="8dip"
+        android:text="@string/factory_car"
+        android:textColor="@color/grey3"
+        android:layout_below="@id/addexam_list_item_text"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/addexam_list_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="8dip"
+        android:textColor="@color/orange2"
+        android:layout_alignTop="@id/addexam_list_item_priceHint"
+        android:layout_toRightOf="@id/addexam_list_item_priceHint" 
+        android:visibility="gone"/>
+</RelativeLayout>

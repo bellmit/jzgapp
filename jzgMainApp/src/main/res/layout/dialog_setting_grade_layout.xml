@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="20dp" >
+	
+    <LinearLayout 
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/white_dialog_bg">
+        
+        <TextView 
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dialog_text_color"
+            android:textSize="@dimen/jzg_remit_btn_size"
+            android:gravity="center_horizontal"
+            android:text="精真估"/>
+        
+        <TextView 
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey1"
+            android:textSize="@dimen/jzg_common_size"
+            android:gravity="center_horizontal"
+            android:text="你身边最专业的二手车评估平台"/>
+        
+        <Button 
+            android:id="@+id/btn_dialog_system_set_pingfen_one"
+            style="@style/BorderBlueFillWhiteTextBlueStyle"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:text="五星好评"/>
+        
+        <Button 
+            android:id="@+id/btn_dialog_system_set_pingfen_two"
+            style="@style/BorderBlueFillWhiteTextBlueStyle"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:text="鼓励一下"/>
+        
+        <Button 
+            android:id="@+id/btn_dialog_system_set_pingfen_three"
+            style="@style/BorderBlueFillWhiteTextBlueStyle"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:text="下次再说"/>
+        
+    </LinearLayout>
+    
+</FrameLayout>

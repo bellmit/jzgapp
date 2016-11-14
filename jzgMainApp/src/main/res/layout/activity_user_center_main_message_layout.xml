@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <com.jzg.jzgoto.phone.view.shared.HeadBar
+        android:id="@+id/header_headbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_shared_headbar_height"
+        custom:barTitle="消息"
+        custom:leftButton="back"
+        custom:rightButton="none" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+
+            <Button
+                android:id="@+id/btn_message_private_message"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_left_bg"
+                android:gravity="center"
+                android:text="通知"
+                android:textColor="@color/tab_text_color_selector" />
+
+            <Button
+                android:id="@+id/btn_message_public_message"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_right_bg"
+                android:gravity="center"
+                android:selectAllOnFocus="true"
+                android:text="公告"
+                android:textColor="@color/tab_text_color_selector" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab_item_container"></FrameLayout>
+
+
+</LinearLayout>

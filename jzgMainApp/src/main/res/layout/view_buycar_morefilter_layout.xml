@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/background" />
+    <TextView
+        android:id="@+id/view_advance_filter_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="月均成本"
+        android:paddingLeft="10dip"
+        android:paddingTop="10dip"
+        android:textColor="@color/text_filter_darkgrey"
+        android:textSize="@dimen/jzg_common_small_size"
+        android:textStyle="bold" />
+
+    <com.jzg.jzgoto.phone.view.buy.BuyCarGridViewInScroll
+        android:id="@+id/view_advance_filter_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="5dip"
+        android:numColumns="3"
+        android:padding="10dip"
+        android:listSelector="@null"
+        android:background="@color/white"
+        android:verticalSpacing="5dip" />
+
+</LinearLayout>

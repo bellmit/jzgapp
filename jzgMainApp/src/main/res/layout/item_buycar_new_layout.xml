@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:padding="10dip">
+
+        <ImageView
+            android:id="@+id/item_buycar_new_icon"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:background="@color/text_blue"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/item_buycar_new_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/item_buycar_new_icon"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="奔驰C级旅行车"
+            android:textColor="@color/text_filter_darkgrey"
+            android:textSize="@dimen/jzg_common_size" />
+
+        <TextView
+            android:id="@+id/item_buycar_new_Type_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_buycar_new_name"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/item_buycar_new_icon"
+            android:paddingTop="5dp"
+            android:text="紧凑型"
+            android:textColor="@color/text_filter_darkgrey"
+            android:textSize="@dimen/jzg_common_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/item_buycar_new_Type_textView"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/item_buycar_new_icon"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingRight="5dp"
+                android:text="新车优惠价"
+                android:textColor="@color/text_title_black"
+                android:textSize="@dimen/jzg_common_xsmall_size" />
+
+            <TextView
+                android:id="@+id/item_buycar_new_startprice_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="17.78"
+                android:textColor="@color/text_red"
+                android:textSize="@dimen/jzg_common_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="万 - "
+                android:textColor="@color/text_red"
+                android:textSize="@dimen/jzg_common_xsmall_size" />
+
+            <TextView
+                android:id="@+id/item_buycar_new_endPrice_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="17.78"
+                android:textColor="@color/text_red"
+                android:textSize="@dimen/jzg_common_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingRight="5dp"
+                android:text="万"
+                android:textColor="@color/text_red"
+                android:textSize="@dimen/jzg_common_xsmall_size" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

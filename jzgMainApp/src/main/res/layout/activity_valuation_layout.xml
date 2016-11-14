@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <com.jzg.jzgoto.phone.view.shared.HeadBar
+        android:id="@+id/valuation_hearBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:barTitle="估值"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/valuation_sellCar_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/woshichezhu_xuanzhong"
+                    android:drawablePadding="5dp"
+                    android:padding="15dp"
+                    android:textSize="@dimen/jzg_common_size"
+                    android:textColor="@color/blue"
+                    android:text="我是车主" />
+
+                <TextView
+                    android:id="@+id/valuation_buyCar_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/woshimaijia_moren"
+                    android:drawablePadding="5dp"
+                    android:padding="15dp"
+                    android:textSize="@dimen/jzg_common_size"
+                    android:textColor="@color/grey_for_valuation"
+                    android:text="我是买家" />
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/valuation_carStyle_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/valuation_carStyle_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/jzg_common_small_size"
+                    android:textColor="@color/dark_grey_text"
+                    android:layout_centerVertical="true"
+                    android:text="品牌车型" />
+
+                <TextView
+                    android:id="@+id/valuation_carStyle_show_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:drawableRight="@drawable/go"
+                    android:drawablePadding="5dip"
+                    android:layout_toRightOf="@id/valuation_carStyle_textView"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:hint="请选择车辆信息 "
+                    android:textSize="@dimen/jzg_common_small_size"
+                    android:textColor="@color/dark_grey_text"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dip"
+                android:background="@color/line_bg" />
+
+            <RelativeLayout
+                android:id="@+id/valuation_carRegDate_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/valuation_carRegDate_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/jzg_common_small_size"
+                    android:textColor="@color/dark_grey_text"
+                    android:layout_centerVertical="true"
+                    android:text="上牌时间" />
+
+                <TextView
+                    android:id="@+id/valuation_carRegDate_show_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:drawableRight="@drawable/go"
+                    android:drawablePadding="5dip"
+                    android:layout_toRightOf="@id/valuation_carRegDate_textView"
+                    android:gravity="right"
+                    android:textSize="@dimen/jzg_common_small_size"
+                    android:textColor="@color/dark_grey_text"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dip"
+                android:background="@color/line_bg" />
+            <RelativeLayout
+                android:id="@+id/valuation_carMileage_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/valuation_carMileage_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/jzg_common_small_size"
+                    android:textColor="@color/dark_grey_text"
+                    android:layout_centerVertical="true"
+                    android:text="行驶里程" />
+                <TextView
+                    android:id="@+id/valuation_carMileage_right_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/jzg_common_small_size"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_grey_text"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:text="万公里" />
+                <EditText
+                    android:id="@+id/valuation_carMileage_show_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/valuation_carMileage_textView"
+                    android:layout_toLeftOf="@id/valuation_carMileage_right_textView"
+                    android:gravity="right"
+                    android:hint="请输入"
+                    android:paddingRight="5dp"
+                    android:inputType="numberDecimal"
+                    android:background="@color/white"
+                    android:textSize="@dimen/jzg_common_small_size"
+                    android:textColor="@color/dark_grey_text"/>
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dip"
+                android:background="@color/line_bg" />
+            <RelativeLayout
+                android:id="@+id/valuation_carCity_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/valuation_carCity_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/jzg_common_small_size"
+                    android:textColor="@color/dark_grey_text"
+                    android:layout_centerVertical="true"
+                    android:text="所在城市" />
+
+                <TextView
+                    android:id="@+id/valuation_carCity_show_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:drawableRight="@drawable/go"
+                    android:drawablePadding="5dip"
+                    android:layout_toRightOf="@id/valuation_carCity_textView"
+                    android:gravity="right"
+                    android:textSize="@dimen/jzg_common_small_size"
+                    android:textColor="@color/dark_grey_text"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dip"
+                android:background="@color/line_bg" />
+            <Button
+                android:id="@+id/valuation_submit_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/btn_blue_round_normal_style"
+                android:padding="10dp"
+                android:textSize="@dimen/jzg_common_size"
+                android:text="买卖、置换二手车、先来估个价！"/>
+            <com.jzg.jzgoto.phone.view.valuation.ValuationHistoryView
+                android:id="@+id/valuation_history_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

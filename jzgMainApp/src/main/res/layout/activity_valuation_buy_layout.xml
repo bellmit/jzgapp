@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/view_title_layout"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.jzg.jzgoto.phone.view.valuation.ValuationBaseInfoView
+                android:id="@+id/valuation_buy_baseInfo_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.jzg.jzgoto.phone.view.valuation.ValuationBuyPriceView
+                android:id="@+id/valuation_buy_price_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.jzg.jzgoto.phone.view.valuation.ValuationBuyNearCityView
+                android:id="@+id/valuation_buy_nearCity_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.jzg.jzgoto.phone.view.buy.BuyCarDetailUserLikeView
+                android:id="@+id/valuation_buy_userLike_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.jzg.jzgoto.phone.view.valuation.ValuationRecommendCarView
+                android:id="@+id/valuation_buy_recommend_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

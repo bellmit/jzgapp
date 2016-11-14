@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+
+    <com.jzg.jzgoto.phone.view.shared.HeadBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:barTitle="车抵贷"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/long_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/chedidai" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                style="@style/small_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名"
+                android:textColor="@color/grey3" />
+
+            <EditText
+                android:id="@+id/edit_loan_car_main_name"
+                style="@style/edit_sell_bg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:hint="请输入您的姓名"
+                android:textColor="@color/grey3" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                style="@style/small_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号"
+                android:textColor="@color/grey3" />
+
+            <EditText
+                android:id="@+id/edit_loan_car_main_phonenum"
+                style="@style/edit_sell_bg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:hint="请输入手机号码"
+                android:inputType="numberDecimal"
+                android:textColor="@color/grey3" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                style="@style/small_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="验证码"
+                android:textColor="@color/grey3" />
+
+            <EditText
+                android:id="@+id/edit_loan_car_main_autocode"
+                style="@style/edit_sell_bg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_marginRight="7dp"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:hint="请输入验证码"
+                android:inputType="numberDecimal"
+                android:textColor="@color/grey3" />
+
+            <TextView
+                style="@style/small_text_size"
+                android:id="@+id/tv_loan_car_main_get_autocode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="90dp"
+                android:text="获取验证码"
+                android:gravity="center"
+                android:textColor="@color/text_blue" />
+        </LinearLayout>
+
+        <Button
+            style="@style/submit_btn_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:onClick="onApplyAll"
+            android:text="快速申请" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+
+            <com.jzg.jzgoto.phone.components.self.discover.xlistview.XListView
+                android:id="@+id/xlist_car_loan_main_allshow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </com.jzg.jzgoto.phone.components.self.discover.xlistview.XListView>
+
+            <TextView
+                style="@style/small_text_size"
+                android:id="@+id/tv_car_loan_main_listempty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="暂无相关数据!"
+                android:textColor="@color/grey3"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingLeft="15dip" >
+
+    <ImageView
+        android:id="@+id/item_buy_car_color_img"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="5dip"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/item_buy_car_color_text"
+        style="@style/small_dark_grey_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingBottom="15dip"
+        android:paddingTop="15dip"
+        android:text="白色" />
+
+</LinearLayout>

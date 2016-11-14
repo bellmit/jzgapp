@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <com.jzg.jzgoto.phone.view.shared.HeadBar
+        android:id="@+id/header_headbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_shared_headbar_height"
+        custom:barTitle="设置"
+        custom:leftButton="back"
+        custom:rightButton="none" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <!-- 消息推送 -->
+            <RelativeLayout
+                android:id="@+id/view_msg_push_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:gravity="center"
+                android:padding="3dp" >
+
+                <TextView
+                    style="@style/small_text_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:drawableLeft="@drawable/icon_xiaoxi"
+                    android:drawablePadding="10dp"
+                    android:text="消息推送"
+                    android:textColor="@color/text_title_black" />
+
+                <ImageView
+                    android:id="@+id/view_msg_push_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_setting_switcher_bg" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="40dp"
+                android:background="@color/line_bg" />
+
+            <!-- 清理缓存 -->
+            <RelativeLayout
+                android:id="@+id/view_clearcache_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/small_text_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:drawableLeft="@drawable/icon_qinli"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="清理缓存"
+                    android:textColor="@color/text_title_black" />
+
+                <TextView
+                    android:id="@+id/view_clearcache_textview"
+                    style="@style/small_text_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text="0.01M"
+                    android:textColor="@color/grey4" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_bg" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/background" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <!-- 意见反馈 -->
+
+            <RelativeLayout
+                android:id="@+id/view_feedback_item_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:gravity="center"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/small_text_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:drawableLeft="@drawable/icon_yijian"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="意见反馈"
+                    android:textColor="@color/text_title_black" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/menu_item_right_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="40dp"
+                android:background="@color/line_bg" />
+            <!-- 分享 -->
+
+            <RelativeLayout
+                android:id="@+id/view_share_item_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:gravity="center"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/small_text_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:drawableLeft="@drawable/detail_fenxiang"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="分享"
+                    android:textColor="@color/text_title_black" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/menu_item_right_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="40dp"
+                android:background="@color/line_bg" />
+            <!-- 打分 -->
+
+            <RelativeLayout
+                android:id="@+id/view_grade_item_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:gravity="center"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/small_text_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:drawableLeft="@drawable/icon_dafen"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="打分"
+                    android:textColor="@color/text_title_black" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/menu_item_right_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="40dp"
+                android:background="@color/line_bg" />
+            <!-- 关于 -->
+
+            <RelativeLayout
+                android:id="@+id/view_about_item_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:gravity="center"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/small_text_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:drawableLeft="@drawable/icon_guanyu"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="关于"
+                    android:textColor="@color/text_title_black" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/menu_item_right_arrow" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_exit_item_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_item_height"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/small_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="退出登录"
+            android:textColor="#ff643b"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

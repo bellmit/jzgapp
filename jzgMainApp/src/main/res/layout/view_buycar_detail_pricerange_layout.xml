@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/buycar_detail_priceRange_sellCars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="全网在售车源"
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/jzg_common_small_size" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="该车型全网在售，共"
+                    android:textColor="@color/dark_grey_text"
+                    android:textSize="@dimen/jzg_common_small_size" />
+
+                <TextView
+                    android:id="@+id/buycar_detail_priceRange_sellCarNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="123"
+                    android:textColor="@color/text_red"
+                    android:textSize="@dimen/jzg_common_small_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="辆"
+                    android:textColor="@color/dark_grey_text"
+                    android:textSize="@dimen/jzg_common_small_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buycar_detail_priceRange_Layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报价范围"
+                    android:textColor="@color/dark_grey_text"
+                    android:textSize="@dimen/jzg_common_small_size" />
+
+                <TextView
+                    android:id="@+id/buycar_detail_priceRange_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="23.5万-25.5万"
+                    android:textColor="@color/text_red"
+                    android:textSize="@dimen/jzg_common_small_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/buycar_detail_priceRange_hideLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.jzg.jzgoto.phone.view.valuation.DrawViewSectorView
+            android:id="@+id/buycar_detail_priceRange_sectorView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:id="@+id/buycar_detail_priceRange_priceJudge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="该车报价合理，可以电话咨询看车"
+            android:textColor="@color/dark_grey_text"
+            android:textSize="@dimen/jzg_common_small_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_bg" />
+
+        <TextView
+            android:id="@+id/buycar_detail_priceRange_toValuation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="查看详细估值结果"
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/jzg_common_small_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_bg" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/background" />
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+        <com.jzg.jzgoto.phone.tools.view.swipemenulistview.SwipeMenuListView
+            android:id="@+id/my_car_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:divider="@color/common_line_bg"
+            android:dividerHeight="1px"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:listSelector="@android:color/transparent"
+            android:overScrollMode="never"/>
+
+        <LinearLayout
+            android:id="@+id/car_empty_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/view_car_license_add_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:gravity="center"
+                android:text="你的车库空空如也，快来添加您的爱车吧"
+                android:textColor="#3c3c3c"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_add_car"
+            style="@style/FillBlueTextWhiteStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_button_height"
+            android:layout_marginLeft="@dimen/common_item_margin_left"
+            android:layout_marginRight="@dimen/common_item_margin_right"
+            android:layout_marginTop="20dp"
+            android:text="添加爱车" />
+
+    </LinearLayout>
+</RelativeLayout>

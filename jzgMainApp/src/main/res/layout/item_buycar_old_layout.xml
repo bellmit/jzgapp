@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/item_buy_car_icon"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/text_blue"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/item_buy_car_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/item_buy_car_icon"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="北京现代2015款  豪华版 2.0T 舒适型"
+            android:textColor="@color/text_filter_darkgrey"
+            android:textSize="@dimen/jzg_common_size" />
+
+        <LinearLayout
+            android:id="@+id/item_buy_car_rightcenter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_buy_car_name"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="2dip"
+            android:layout_toRightOf="@id/item_buy_car_icon"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_buy_car_mileage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.1万公里"
+                android:textColor="@color/text_item_lightgrey"
+                android:textSize="@dimen/jzg_common_xsmall_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" | "
+                android:textColor="@color/text_item_lightgrey"
+                android:textSize="@dimen/jzg_common_xsmall_size" />
+
+            <TextView
+                android:id="@+id/item_buy_car_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2013年12月"
+                android:textColor="@color/text_item_lightgrey"
+                android:textSize="@dimen/jzg_common_xsmall_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" | "
+                android:textColor="@color/text_item_lightgrey"
+                android:textSize="@dimen/jzg_common_xsmall_size" />
+
+            <TextView
+                android:id="@+id/item_buy_car_region"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="北京"
+                android:textColor="@color/text_item_lightgrey"
+                android:textSize="@dimen/jzg_common_xsmall_size" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/item_buy_car_icon">
+
+            <TextView
+                android:id="@+id/item_buy_car_payment_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="bottom"
+                android:paddingBottom="6dp"
+                android:text=""
+                android:textColor="@color/text_title_black"
+                android:textSize="@dimen/jzg_common_xsmall_size" />
+
+            <TextView
+                android:id="@+id/item_buycar_price_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/item_buy_car_payment_textView"
+                android:gravity="bottom"
+                android:paddingBottom="6dp"
+                android:text="17.78"
+                android:textColor="@color/text_red"
+                android:textSize="@dimen/jzg_common_size" />
+
+            <TextView
+                android:id="@+id/item_buy_car_W_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/item_buycar_price_textView"
+                android:gravity="bottom"
+                android:paddingBottom="6dp"
+                android:paddingRight="5dp"
+                android:text="万"
+                android:textColor="@color/text_red"
+                android:textSize="@dimen/jzg_common_xsmall_size" />
+
+            <TextView
+                android:id="@+id/item_buycar_jzg_price_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/item_buy_car_W_textView"
+                android:gravity="bottom"
+                android:paddingBottom="6dp"
+                android:text="精真估估价8.8万"
+                android:textColor="@color/text_title_black"
+                android:textSize="@dimen/jzg_common_xsmall_size" />
+
+            <TextView
+                android:id="@+id/item_buycar_sourceType_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="bottom"
+                android:paddingBottom="6dp"
+                android:text="人人车"
+                android:textColor="@color/grey_for_valuation"
+                android:textSize="@dimen/jzg_common_xsmall_size"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

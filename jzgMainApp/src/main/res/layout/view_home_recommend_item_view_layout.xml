@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:background="@color/background"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/view_card_content_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+        <include
+            android:id="@+id/view_card_left"
+            layout="@layout/view_home_recommend_card_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <View
+            android:id="@+id/view_card_divider_left"
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <include
+            android:id="@+id/view_card_middle"
+            layout="@layout/view_home_recommend_card_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <View
+            android:id="@+id/view_card_divider_right"
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <include
+            android:id="@+id/view_card_right"
+            layout="@layout/view_home_recommend_card_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <View
+        android:id="@+id/view_item_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_line_bg"
+        android:visibility="gone"/>
+
+</LinearLayout>

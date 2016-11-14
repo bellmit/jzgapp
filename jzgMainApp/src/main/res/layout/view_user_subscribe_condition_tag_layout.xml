@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/user_subscribe_conditicon_tag_bg"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/view_tag_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:text="奥迪"
+        android:gravity="center"
+        android:textSize="11sp"
+        android:textColor="#a6a6a6"/>
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header_view_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_fragment_banner_height"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/banner_view_place_hoder_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/banner_default"/>
+        <LinearLayout
+            android:id="@+id/banner_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"/>
+    </FrameLayout>
+
+    <include layout="@layout/view_divider" />
+
+    <com.jzg.jzgoto.phone.view.main.HomeCarSummaryInfoView
+        android:id="@+id/view_car_summary_info_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/btn_car_evaluate"
+            style="@style/FillOrangeTextWhiteStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="0dp"
+            android:gravity="center"
+            android:text="爱车估值" />
+        <TextView
+            android:id="@+id/btn_car_query_price"
+            style="@style/FillBlueTextWhiteStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="买车查价" />
+    </LinearLayout>
+
+    <include layout="@layout/view_divider" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="left|center_vertical"
+        android:includeFontPadding="false"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:drawableLeft="@drawable/icon_jiange"
+        android:drawablePadding="10dp"
+        android:text="请选择您的购车现金预算，我们帮您选好车"
+        android:textColor="#65686f"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="153dp"
+        android:background="@color/white">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout">
+
+            <RelativeLayout
+                android:id="@+id/btn_buy_car_use_total"
+                style="@style/BorderBlueFillWhiteTextBlueStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_quankuan"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:textColor="#FF0099FF"
+                    android:textSize="16sp"
+                    android:text="全款买车" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btn_buy_car_use_loan"
+                style="@style/BorderBlueFillWhiteTextBlueStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/icon_daikuan"
+                    android:drawablePadding="10dp"
+                    android:textColor="#FF0099FF"
+                    android:textSize="16sp"
+                    android:text="贷款首付" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.jzg.jzgoto.phone.view.sellcar.DoubleSeekBar
+            android:id="@+id/dsb"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/linearLayout" />
+    </RelativeLayout>
+
+    <include layout="@layout/view_divider" />
+
+    <TextView
+        android:id="@+id/view_latest_news"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="left|center_vertical"
+        android:includeFontPadding="false"
+        android:background="@color/background"
+        android:paddingLeft="15dp"
+        android:drawableLeft="@drawable/icon_jiange"
+        android:drawablePadding="10dp"
+        android:text="最新资讯"
+        android:textColor="#65686f"
+        android:textSize="14sp" />
+
+    <include layout="@layout/view_divider" />
+
+</LinearLayout>

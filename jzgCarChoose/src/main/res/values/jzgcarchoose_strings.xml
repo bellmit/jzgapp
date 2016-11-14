@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">选择车</string>
+    <string name="action_settings">Settings</string>
+    <string name="factory_car">厂商指导价：</string>
+    <string name="del_text">删除</string>
+
+</resources>

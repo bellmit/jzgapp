@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="10dip" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@drawable/long_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip" >
+
+        <TextView
+            android:id="@+id/share_weChart"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="5dip"
+            android:drawableTop="@drawable/umeng_socialize_wechat"
+            android:gravity="center_horizontal"
+            android:text="微信好友" />
+
+        <TextView
+            android:id="@+id/share_wxcircle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="5dip"
+            android:drawableTop="@drawable/umeng_socialize_wxcircle"
+            android:gravity="center_horizontal"
+            android:text="朋友圈" />
+
+        <TextView
+            android:id="@+id/share_QQ"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="5dip"
+            android:drawableTop="@drawable/umeng_socialize_qq_on"
+            android:gravity="center_horizontal"
+            android:text="QQ好友" />
+
+        <TextView
+            android:id="@+id/share_QQZone"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="5dip"
+            android:drawableTop="@drawable/umeng_socialize_qzone_on"
+            android:gravity="center_horizontal"
+            android:text="QQ空间" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip" >
+
+        <TextView
+            android:id="@+id/share_sina"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="5dip"
+            android:drawableTop="@drawable/umeng_socialize_sina_on"
+            android:gravity="center_horizontal"
+            android:text="微博" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="5dip"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="5dip"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="5dip"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+</LinearLayout>

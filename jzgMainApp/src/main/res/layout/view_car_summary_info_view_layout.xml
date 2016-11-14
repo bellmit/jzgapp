@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <RelativeLayout
+        android:id="@+id/view_car_style_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/car_info_item_height">
+
+        <TextView
+            android:id="@+id/view_car_style_text_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="请选择品牌车型"
+            android:textColor="@color/car_info_item_title_color"
+            android:textSize="@dimen/car_info_item_title_text_size" />
+
+        <TextView
+            android:id="@+id/view_car_style_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/view_car_style_text_label"
+            android:drawablePadding="5dip"
+            android:drawableRight="@drawable/go"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="@string/car_summary_info_select_car_brand_tip"
+            android:textColor="@color/car_info_item_hint_color"
+            android:textSize="@dimen/car_info_item_hint_text_size" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/common_line_bg" />
+    </RelativeLayout>
+
+    <!-- 上牌时间 -->
+    <RelativeLayout
+        android:id="@+id/view_car_license_date_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/car_info_item_height">
+
+        <TextView
+            android:id="@+id/view_car_license_date_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/car_summary_info_select_car_register_date"
+            android:textColor="@color/car_info_item_title_color"
+            android:textSize="@dimen/car_info_item_title_text_size" />
+
+        <TextView
+            android:id="@+id/view_car_license_date_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:drawablePadding="5dip"
+            android:drawableRight="@drawable/go"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="@string/car_summary_info_select_car_register_date_tip"
+            android:textColor="@color/car_info_item_hint_color"
+            android:textSize="@dimen/car_info_item_hint_text_size" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/common_line_bg" />
+    </RelativeLayout>
+
+    <!-- 行驶公里 -->
+    <RelativeLayout
+        android:id="@+id/mileage_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/car_info_item_height">
+
+        <TextView
+            android:id="@+id/view_mileage_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/car_summary_info_select_car_mileage"
+            android:textColor="@color/car_info_item_title_color"
+            android:textSize="@dimen/car_info_item_title_text_size" />
+
+        <TextView
+            android:id="@+id/view_mileage_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:text="万公里"
+            android:textColor="@color/car_info_item_title_color"
+            android:textSize="@dimen/car_info_item_title_text_size" />
+
+        <EditText
+            android:id="@+id/view_mileage_editor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/view_mileage_unit"
+            android:layout_toRightOf="@id/view_mileage_label"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="请输入 "
+            android:inputType="numberDecimal"
+            android:maxLength="11"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textColor="@color/car_info_item_hint_color"
+            android:textSize="@dimen/car_info_item_hint_text_size" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/common_line_bg" />
+    </RelativeLayout>
+
+    <!-- 上牌地区 -->
+    <RelativeLayout
+        android:id="@+id/view_car_place_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/car_info_item_height">
+
+        <TextView
+            android:id="@+id/view_car_place_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="所在城市"
+            android:textColor="@color/car_info_item_title_color"
+            android:textSize="@dimen/car_info_item_title_text_size" />
+
+        <TextView
+            android:id="@+id/view_car_place_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:drawablePadding="5dip"
+            android:drawableRight="@drawable/go"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="@string/car_summary_info_select_place_tip"
+            android:textColor="@color/car_info_item_hint_color"
+            android:textSize="@dimen/car_info_item_hint_text_size" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/common_line_bg" />
+    </RelativeLayout>
+</LinearLayout>

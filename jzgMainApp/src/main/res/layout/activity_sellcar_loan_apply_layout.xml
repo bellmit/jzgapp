@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <com.jzg.jzgoto.phone.view.shared.HeadBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:barTitle="申请贷款" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_bg" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/small_text_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="请填写您真实的信息，该信息只会用在我们帮助您申请抵押贷款业务中，精真估不会以任何形式泄露给其他人员或机构。"
+                android:textColor="@color/grey3" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_bg" />
+
+            <com.jzg.jzgoto.phone.view.replacecar.MyNoClickLinearLayout
+                android:id="@+id/linear_apply_loan_carfullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    style="@style/small_text_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="品牌车型"
+                    android:textColor="@color/grey3" />
+
+                <EditText
+                    android:id="@+id/edit_apply_loan_carfullname"
+                    style="@style/edit_sell_bg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:gravity="right"
+                    android:hint="请选择品牌车型 "
+                    android:paddingRight="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/grey3" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:src="@drawable/go" />
+            </com.jzg.jzgoto.phone.view.replacecar.MyNoClickLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_bg" />
+
+            <com.jzg.jzgoto.phone.view.replacecar.MyNoClickLinearLayout
+                android:id="@+id/linear_apply_loan_reltime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    style="@style/small_text_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上牌时间"
+                    android:textColor="@color/grey3" />
+
+                <EditText
+                    android:id="@+id/edit_apply_loan_reltime_value"
+                    style="@style/edit_sell_bg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:gravity="right"
+                    android:hint="请选择上牌时间 "
+                    android:paddingRight="5dp"
+                    android:textColor="@color/grey3" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:src="@drawable/go" />
+            </com.jzg.jzgoto.phone.view.replacecar.MyNoClickLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_bg" />
+
+            <com.jzg.jzgoto.phone.view.replacecar.MyNoClickLinearLayout
+                android:id="@+id/linear_apply_loan_mileage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    style="@style/small_text_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="行驶里程"
+                    android:textColor="@color/grey3" />
+
+                <EditText
+                    android:id="@+id/edit_apply_loan_mileage_value"
+                    style="@style/edit_sell_bg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:gravity="right"
+                    android:hint="请选择行驶里程 "
+                    android:paddingRight="5dp"
+                    android:textColor="@color/grey3" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:src="@drawable/go" />
+            </com.jzg.jzgoto.phone.view.replacecar.MyNoClickLinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_bg" />
+            <com.jzg.jzgoto.phone.view.replacecar.MyNoClickLinearLayout
+                android:id="@+id/linear_apply_loan_reladdress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    style="@style/small_text_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上牌地区"
+                    android:textColor="@color/grey3" />
+
+                <EditText
+                    android:id="@+id/edit_apply_loan_reladdress_value"
+                    style="@style/edit_sell_bg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:gravity="right"
+                    android:hint="请选择上牌地区 "
+                    android:paddingRight="5dp"
+                    android:textColor="@color/grey3" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:src="@drawable/go" />
+            </com.jzg.jzgoto.phone.view.replacecar.MyNoClickLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_bg" />
+
+            <com.jzg.jzgoto.phone.view.replacecar.MyNoClickLinearLayout
+                android:id="@+id/linear_apply_loan_moartgate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    style="@style/small_text_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="抵押状态"
+                    android:textColor="@color/grey3" />
+
+                <EditText
+                    android:id="@+id/edit_apply_loan_moartgage_value"
+                    style="@style/edit_sell_bg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:gravity="right"
+                    android:hint="请选择抵押状态 "
+                    android:paddingRight="5dp"
+                    android:textColor="@color/grey3" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:src="@drawable/go" />
+            </com.jzg.jzgoto.phone.view.replacecar.MyNoClickLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_bg" />
+
+            <com.jzg.jzgoto.phone.view.replacecar.MyNoClickLinearLayout
+                android:id="@+id/linear_apply_loan_loantime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    style="@style/small_text_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="贷款期限"
+                    android:textColor="@color/grey3" />
+
+                <EditText
+                    android:id="@+id/edit_apply_loan_loantime_value"
+                    style="@style/edit_sell_bg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:gravity="right"
+                    android:hint="请选择贷款期限 "
+                    android:paddingRight="5dp"
+                    android:textColor="@color/grey3" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:src="@drawable/go" />
+            </com.jzg.jzgoto.phone.view.replacecar.MyNoClickLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_bg" />
+
+            <com.jzg.jzgoto.phone.view.replacecar.MyNoClickLinearLayout
+                android:id="@+id/linear_apply_loan_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    style="@style/small_text_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="性别"
+                    android:textColor="@color/grey3" />
+
+                <EditText
+                    android:id="@+id/edit_apply_loan_sex_value"
+                    style="@style/edit_sell_bg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:gravity="right"
+                    android:hint="请选择性别 "
+                    android:paddingRight="5dp"
+                    android:textColor="@color/grey3" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:src="@drawable/go" />
+            </com.jzg.jzgoto.phone.view.replacecar.MyNoClickLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_bg" />
+
+            <LinearLayout
+                android:id="@+id/linear_apply_loan_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    style="@style/small_text_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="年龄"
+                    android:textColor="@color/grey3" />
+
+                <EditText
+                    android:id="@+id/edit_apply_loan_age_value"
+                    style="@style/edit_sell_bg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="请填写年龄 "
+                    android:inputType="numberSigned"
+                    android:maxLength="2"
+                    android:textColor="@color/grey3" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:src="@drawable/go"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_bg" />
+
+            <com.jzg.jzgoto.phone.view.replacecar.MyNoClickLinearLayout
+                android:id="@+id/linear_apply_loan_credit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    style="@style/small_text_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="信用记录"
+                    android:textColor="@color/grey3" />
+
+                <EditText
+                    android:id="@+id/edit_apply_loan_credit_value"
+                    style="@style/edit_sell_bg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:gravity="right"
+                    android:hint="请选择信用记录 "
+                    android:paddingRight="5dp"
+                    android:textColor="@color/grey3" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:src="@drawable/go" />
+            </com.jzg.jzgoto.phone.view.replacecar.MyNoClickLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_bg" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/line_bg"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/linear_apply_loan_truename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/small_text_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="真实姓名"
+                    android:textColor="@color/grey3" />
+
+                <EditText
+                    android:id="@+id/tv_apply_loan_truename"
+                    style="@style/common_text_size"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="请输入您的姓名"
+                    android:textColor="@color/grey3" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_bg"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/small_text_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机号码"
+                    android:textColor="@color/grey3" />
+
+                <EditText
+                    android:id="@+id/tv_apply_loan_phonenum"
+                    style="@style/small_text_size"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="输入手机号码"
+                    android:textColor="@color/grey3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/common_text_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="验证码"
+                    android:textColor="@color/grey3" />
+
+                <EditText
+                    android:id="@+id/tv_apply_loan_autocode"
+                    style="@style/common_text_size"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="输入验证码"
+                    android:textColor="@color/grey3" />
+
+                <TextView
+                    android:id="@+id/tv_apply_loan_get_autocode"
+                    style="@style/common_text_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="获取验证码"
+                    android:textColor="@color/text_blue" />
+            </LinearLayout>
+
+            <Button
+                style="@style/submit_btn_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:onClick="onSubmitAll"
+                android:padding="10dp"
+                android:text="提交申请" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

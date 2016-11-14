@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <com.jzg.jzgoto.phone.tools.view.swipemenulistview.SwipeMenuListView
+        android:id="@+id/subscribe_car_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:divider="@color/common_line_bg"
+        android:dividerHeight="1px"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:listSelector="@drawable/common_listview_selector"
+        android:overScrollMode="never"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"/>
+
+    <include
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/view_shared_empty_view_layout"
+        android:visibility="gone" />
+
+</RelativeLayout>

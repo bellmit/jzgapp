@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/img_apply_request_imgpath"
+            android:layout_width="110dp"
+            android:layout_height="90dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/jingzhengu_moren" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:minHeight="90dp" >
+
+            <TextView
+                android:id="@+id/tv_apply_request_car_fullname"
+                style="@style/common_text_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="福特 福克斯两厢 2012款1.6 自动 风尚型"
+                android:textColor="@color/grey3" />
+
+            <TextView
+                android:id="@+id/tv_apply_request_car_msg"
+                style="@style/common_text_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_apply_request_car_fullname"
+                android:text="3年车辆|4.1万公里|北京1111111111111111"
+                android:textColor="@color/grey1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_apply_request_car_msg"
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/common_text_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="新车价: "
+                    android:textColor="@color/grey1" />
+
+                <TextView
+                    android:id="@+id/tv_apply_request_car_price"
+                    style="@style/common_text_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="17.25万"
+                    android:textColor="@color/text_red"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/text_blue" />
+
+        <TextView
+            style="@style/common_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="收购价格"
+            android:textColor="@color/grey3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="(单位：万元)"
+            android:textColor="@color/grey3"
+            android:textSize="12sp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/common_text_size"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="车况良好"
+                android:textColor="@color/grey1" />
+
+            <TextView
+                style="@style/common_text_size"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="正常损耗"
+                android:textColor="@color/grey1" />
+
+            <TextView
+                style="@style/common_text_size"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="车况较差"
+                android:textColor="@color/grey1" />
+
+            <TextView
+                style="@style/common_text_size"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="厂商指导价"
+                android:textColor="@color/grey1" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_apply_request_one_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/price_02" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_apply_request_car_price_one"
+                style="@style/common_text_size"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="16.89万"
+                android:textColor="@color/grey3" />
+
+            <TextView
+                android:id="@+id/tv_apply_request_car_price_two"
+                style="@style/common_text_size"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="13.00万"
+                android:textColor="@color/text_red" />
+
+            <TextView
+                android:id="@+id/tv_apply_request_car_price_three"
+                style="@style/common_text_size"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="10.80万"
+                android:textColor="@color/grey3" />
+
+            <TextView
+                android:id="@+id/tv_apply_request_car_price_four"
+                style="@style/common_text_size"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="10.80万"
+                android:textColor="@color/grey3" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_bg"
+        android:layout_marginBottom="15dp" />
+
+</LinearLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_for_valuation" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tv_item_hedge_view_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/img_n1"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textColor="@color/blue_wathet_textcolor"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_item_hedge_view_brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MINI"
+                android:textColor="@color/text_for_valuation" />
+
+            <TextView
+                android:id="@+id/img_item_hedge_view_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COUNTRYMAN"
+                android:textColor="@color/text_for_valuation" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_item_hedge_view_carpic"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/jingzhengu_moren" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_item_hedge_view_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/line_for_valuation"
+        android:orientation="horizontal"
+        android:padding="1dp" >
+
+        <TextView
+            android:id="@+id/tv_item_hedge_view_one_one"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:text="75.0%"
+            android:textColor="@color/grey_for_valuation" />
+
+        <TextView
+            android:id="@+id/tv_item_hedge_view_one_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:text="69.9%"
+            android:textColor="@color/grey_for_valuation" />
+
+        <TextView
+            android:id="@+id/tv_item_hedge_view_one_three"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:text="65.3%"
+            android:textColor="@color/grey_for_valuation" />
+
+        <TextView
+            android:id="@+id/tv_item_hedge_view_one_four"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:text="59.9%"
+            android:textColor="@color/grey_for_valuation" />
+
+        <TextView
+            android:id="@+id/tv_item_hedge_view_one_five"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:text="53.2%"
+            android:textColor="@color/grey_for_valuation" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_item_hedge_view_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/tv_item_hedge_view_two_one"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="第一年"
+            android:textColor="@color/grey_for_valuation" />
+
+        <TextView
+            android:id="@+id/tv_item_hedge_view_two_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="第二年"
+            android:textColor="@color/grey_for_valuation" />
+
+        <TextView
+            android:id="@+id/tv_item_hedge_view_two_three"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="第三年"
+            android:textColor="@color/grey_for_valuation" />
+
+        <TextView
+            android:id="@+id/tv_item_hedge_view_two_four"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="第四年"
+            android:textColor="@color/grey_for_valuation" />
+
+        <TextView
+            android:id="@+id/tv_item_hedge_view_two_five"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="第五年"
+            android:textColor="@color/grey_for_valuation" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_for_valuation" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/bg_for_valuation" />
+
+</LinearLayout>

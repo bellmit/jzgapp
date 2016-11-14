@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/background"
+	android:orientation="vertical" >
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/view_shared_headbar_height">
+
+		<com.jzg.jzgoto.phone.view.shared.HeadBar
+			android:id="@+id/header_headbar"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/view_shared_headbar_height"
+			custom:barTitle="收藏"
+			custom:leftButton="back"
+			custom:rightButton="none" />
+
+		<TextView
+			android:id="@+id/btn_clean"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:includeFontPadding="false"
+			android:paddingLeft="15dp"
+			android:paddingRight="15dp"
+			android:text="清空"
+			android:textColor="@color/white"
+			android:textSize="16sp" />
+	</RelativeLayout>
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<fragment
+			android:id="@+id/my_car_list_fragment"
+			android:name="com.jzg.jzgoto.phone.fragment.user.FavoriteCarListFragment"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" >
+		</fragment>
+	</FrameLayout>
+</LinearLayout>

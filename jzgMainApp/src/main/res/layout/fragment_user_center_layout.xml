@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:background="@color/user_center_user_image_bg_color">
+            <com.jzg.jzgoto.phone.view.common.CircularImageView
+                android:id="@+id/user_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/img_user"
+                custom:border_width="4dp"
+                custom:shadow="true" />
+            <TextView
+                android:id="@+id/btn_login"
+                style="@style/BorderWhiteTextWhiteStyle"
+                android:layout_width="68dp"
+                android:layout_height="23dp"
+                android:layout_toRightOf="@id/user_img"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:includeFontPadding="false"
+                android:gravity="center"
+                android:text="点击登录"
+                android:textSize="13sp" />
+            <LinearLayout
+                android:id="@+id/user_info_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/user_img"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/user_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/jzg_common_small_size" />
+
+                <TextView
+                    android:id="@+id/user_mobile_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_login"
+                android:layout_alignLeft="@id/btn_login"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="积分："
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/mall_points_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="center"
+                    android:text="1000"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/jzg_common_small_size" />
+
+                <TextView
+                    android:id="@+id/mall_exchange_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center"
+                    android:text="商城兑换"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/user_center_setting_selector"/>
+        </RelativeLayout>
+
+        <include layout="@layout/view_divider" />
+        <FrameLayout
+            android:id="@+id/menu_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <fragment
+                android:id="@+id/menu_fragment"
+                android:name="com.jzg.jzgoto.phone.fragment.user.MenuFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </fragment>
+        </FrameLayout>
+
+
+    </LinearLayout>
+</ScrollView>

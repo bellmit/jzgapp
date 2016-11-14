@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/buycar_detail_hedge_Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img_nduo"
+            android:layout_marginRight="5dp"
+            android:textSize="@dimen/jzg_common_small_size"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:paddingBottom="5dp"
+            android:visibility="visible"/>
+        <TextView
+            android:id="@+id/buycar_detail_hedge_carStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_grey_text"
+            android:textSize="@dimen/jzg_common_small_size"
+            android:text="该车为北京 紧凑型保值率第1"/>
+        <TextView
+            android:id="@+id/buycar_detail_hedge_List"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/jzg_common_small_size"
+            android:gravity="right"
+            android:text="查看排行"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/buycar_detail_hedge_showText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/light_grey_text"
+        android:textSize="@dimen/jzg_common_xsmall_size"
+        android:gravity="right"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:text="这辆车很保值呢，开几年一定还能卖个好价钱。"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/background"/>
+</LinearLayout>

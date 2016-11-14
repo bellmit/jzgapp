@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <com.jzg.jzgoto.phone.view.shared.HeadBar
+        android:id="@+id/header_headbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_shared_headbar_height"
+        custom:barTitle="添加爱车"
+        custom:leftButton="back"
+        custom:rightButton="none" />
+
+    <com.jzg.jzgoto.phone.view.carmanager.CarSummaryInfoView
+        android:id="@+id/view_car_summary_info_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/common_item_margin_left"
+        android:layout_marginRight="@dimen/common_item_margin_right"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/btn_add_car"
+            style="@style/FillBlueTextWhiteStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="添加爱车" />
+        <TextView
+            android:id="@+id/btn_start_evaluate"
+            style="@style/BorderBlueFillWhiteTextBlueStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:text="爱车估值" />
+    </LinearLayout>
+
+</LinearLayout>

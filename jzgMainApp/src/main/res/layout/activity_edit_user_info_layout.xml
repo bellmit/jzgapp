@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+    
+	
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/view_shared_headbar_height">
+
+		<com.jzg.jzgoto.phone.view.shared.HeadBar
+			android:id="@+id/header_headbar"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/view_shared_headbar_height"
+			custom:barTitle="编辑资料"
+			custom:leftButton="back"
+			custom:rightButton="none" />
+
+		<TextView
+			android:id="@+id/btn_save"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:includeFontPadding="false"
+			android:paddingLeft="15dp"
+			android:paddingRight="15dp"
+			android:text="完成"
+			android:textColor="@color/white"
+			android:textSize="16sp" />
+	</RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/long_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <com.jzg.jzgoto.phone.view.common.CircularImageView
+            android:id="@+id/selfimg_user_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/touxiang" />
+
+    </RelativeLayout>
+	<!-- 昵称 -->
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linear_about_me_msg_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="昵称"
+            android:textColor="@color/grey3" />
+
+        <EditText
+            style="@style/edit_sell_bg"
+            android:id="@+id/edit_about_me_msg_nickname_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:singleLine="true"
+            android:maxLength="20"
+            android:gravity="center_vertical|right"
+            android:text=""
+            android:textColor="@color/grey3" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_bg" />
+    <!-- 性别 -->
+    <LinearLayout
+        android:id="@+id/linear_about_me_msg_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性别"
+            android:textColor="@color/grey3" />
+
+        <TextView
+            android:id="@+id/tv_about_me_msg_sex_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="男"
+            android:textColor="@color/grey3" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/arrow_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_bg" />
+    <!-- 年龄 -->
+    <LinearLayout
+        android:id="@+id/linear_about_me_msg_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="年龄"
+            android:textColor="@color/grey3" />
+
+        <EditText
+            style="@style/edit_sell_bg"
+            android:id="@+id/edit_about_me_msg_age_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:singleLine="true"
+            android:inputType="numberSigned"
+            android:maxLength="2"
+            android:gravity="center_vertical|right"
+            android:text="23"
+            android:textColor="@color/grey3" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_bg" />
+    <!-- 真实姓名 -->
+    <LinearLayout
+        android:id="@+id/linear_about_me_msg_truename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="真实姓名"
+            android:textColor="@color/grey3" />
+
+        <EditText
+            style="@style/edit_sell_bg"
+            android:id="@+id/edit_about_me_msg_truename_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:singleLine="true"
+            android:maxLength="8"
+            android:gravity="center_vertical|right"
+            android:text="张馨予"
+            android:textColor="@color/grey3" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_bg" />
+    <!-- 手机号码 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号码"
+            android:textColor="@color/grey3" />
+
+        <TextView
+            android:id="@+id/tv_about_me_msg_phonenum_value"
+            style="@style/edit_sell_bg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:singleLine="true"
+            android:gravity="center_vertical|right"
+            android:text=""
+            android:textColor="@color/grey3" />
+        
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_bg" />
+    <!-- 所在城市 -->
+    <LinearLayout
+        android:id="@+id/linear_about_me_msg_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所在城市"
+            android:textColor="@color/grey3" />
+
+        <TextView
+            android:id="@+id/tv_about_me_msg_address_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="北京"
+            android:textColor="@color/grey3" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/arrow_right" />
+    </LinearLayout>
+
+</LinearLayout>

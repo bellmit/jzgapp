@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:background="@color/background"
+	android:orientation="vertical">
+
+	<com.jzg.jzgoto.phone.view.shared.HeadBar
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:barTitle="选择车型"/>
+<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background" />
+    <TextView 
+        android:id="@+id/car_color_choose_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dip"
+        style="@style/common_grey_text_style"
+        android:background="@color/white"
+        android:visibility="gone"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/background" />
+	<ListView
+	    android:id="@+id/car_color_choose_listview" 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:divider="@color/background"
+	    android:background="@color/white"
+	    android:dividerHeight="1dp"/>
+</LinearLayout>

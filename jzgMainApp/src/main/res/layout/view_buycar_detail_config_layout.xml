@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <com.jzg.jzgoto.phone.view.buy.BuyCarGridViewInScroll
+        android:id="@+id/buycar_detail_config_GridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp"
+        android:background="@color/line_bg"
+        android:numColumns="3"/>
+    <TextView
+        android:id="@+id/buycar_detail_config_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="查看详细参数配置"
+        android:padding="10dp"
+        android:textSize="@dimen/jzg_common_small_size"
+        android:textColor="@color/text_blue"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_bg"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/background"/>
+</LinearLayout>

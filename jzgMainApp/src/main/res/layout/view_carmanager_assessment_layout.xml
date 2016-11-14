@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/view_assessment_container"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textview_assessment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="三个月前估值"
+            android:textColor="@color/black_font"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/textview_car_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="3.88万"
+            android:textColor="#ff6c3d"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/btn_query_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="查看最新估值"
+            android:textColor="#5087e3"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.jzg.jzgoto.phone.view.carmanager.PriceTrendView
+            android:id="@+id/view_price_trend_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="估值曲线占位"
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/jzg_common_small_size"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</LinearLayout>

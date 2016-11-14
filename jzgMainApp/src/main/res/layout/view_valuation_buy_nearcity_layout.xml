@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/jzg_common_size"
+        android:textColor="@color/dark_grey_text"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:text="周边城市该车型售价"/>
+   <com.jzg.jzgoto.phone.view.valuation.DrawViewNearCityBarChartView
+       android:id="@+id/valuation_buy_nearCity_barChartView"
+       android:layout_width="match_parent"
+       android:layout_height="240dp" />
+    <Button
+        android:id="@+id/valuation_buy_nearCity_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_blue_round_normal_style"
+        android:padding="10dp"
+        android:textSize="@dimen/jzg_common_size"
+        android:text="查看历史成交价格"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/background"/>
+</LinearLayout>

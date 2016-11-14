@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/valuation_sell_titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_shared_headbar_height"
+        android:background="@color/header_bar_bg">
+        <TextView
+            android:id="@+id/view_title_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Center"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/jzg_common_size"/>
+        <TextView
+            android:id="@+id/view_title_return_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:drawableLeft="@drawable/icon_back"/>
+        <TextView
+            android:id="@+id/view_title_right_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@drawable/icon_fh"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/valuation_sell_bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/valuation_sell_carFast"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@color/buy_car_detail_lightblue_color"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="快速卖掉爱车"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/valuation_sell_replace"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@color/buy_car_detail_darkblue_color"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="置换新车"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/valuation_sell_addNewCar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1px"
+            android:layout_weight="3"
+            android:background="@color/buy_car_detail_darkblue_color"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="添加爱车"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/valuation_sell_bottomView"
+        android:layout_below="@id/valuation_sell_titleBar"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.jzg.jzgoto.phone.view.valuation.ValuationBaseInfoView
+                android:id="@+id/valuation_sell_baseInfo_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.jzg.jzgoto.phone.view.valuation.ValuationSellPriceView
+                android:id="@+id/valuation_sell_price_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.jzg.jzgoto.phone.view.valuation.ValuationSellReplaceTimeView
+                android:id="@+id/valuation_sell_replaceTime_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.jzg.jzgoto.phone.view.buy.BuyCarDetailUserLikeView
+                android:id="@+id/valuation_sell_userLike_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.jzg.jzgoto.phone.view.valuation.ValuationRecommendCarView
+                android:id="@+id/valuation_sell_recommend_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

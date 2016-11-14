@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/valuation_sell_replace_makeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_filter_darkgrey"
+        android:textSize="@dimen/jzg_common_size"
+        android:padding="10dp"
+        android:text="福克斯车主换车周期分布图"/>
+    <com.jzg.jzgoto.phone.view.valuation.DrawViewBlueLineView
+        android:id="@+id/valuation_sell_replace_cycleView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+    <TextView
+        android:id="@+id/valuation_sell_replace_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_filter_darkgrey"
+        android:textSize="@dimen/jzg_common_xsmall_size"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="20%的福克斯用户选择在第6年卖掉爱车\n精真估预测6年后该车价格或将大幅下降"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/background"/>
+</LinearLayout>

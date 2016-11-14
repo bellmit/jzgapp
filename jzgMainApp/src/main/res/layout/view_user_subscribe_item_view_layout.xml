@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_subscribe_item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/view_subscribe_condition_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_toLeftOf="@+id/view_subscribe_condition_right_arrow"
+           android:layout_alignParentTop="true"
+           android:layout_marginRight="15dp"
+           android:orientation="horizontal">
+           <com.jzg.jzgoto.phone.view.common.TagFlowLayout
+               android:id="@+id/view_subscribe_condition_tab_container"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+       </LinearLayout>
+
+        <ImageView
+            android:id="@+id/view_subscribe_condition_right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/arrow_right" />
+    </RelativeLayout>
+
+    <include layout="@layout/view_divider"/>
+
+    <LinearLayout
+        android:id="@+id/view_subscribe_car_list_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <include layout="@layout/view_divider"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#f3f6fa">
+        <TextView
+            android:id="@+id/btn_subscribe_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="取消订阅"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/view_item_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/view_divider" />
+
+</LinearLayout>

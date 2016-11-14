@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jzgcarchoose_layout_click"
+    android:paddingBottom="5dip" >
+
+    <TextView
+        android:id="@+id/alpha"
+        android:layout_width="fill_parent"
+        android:layout_height="25dip"
+        android:background="@color/title"
+        android:paddingLeft="13dip"
+        android:textColor="#3399cc"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/car_image"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_below="@id/alpha"
+        android:paddingLeft="5dip"
+        android:paddingTop="5dip"
+         />
+
+    
+    <TextView
+        android:id="@+id/car_name"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dip"
+        android:layout_toRightOf="@+id/car_image"
+        android:singleLine="true"
+        android:textSize="14sp"
+        android:text="品牌"
+        android:gravity="center_vertical"
+        android:layout_alignTop="@id/car_image"
+        android:layout_alignBottom="@id/car_image"
+        android:paddingTop="5dip"
+        />
+
+</RelativeLayout>

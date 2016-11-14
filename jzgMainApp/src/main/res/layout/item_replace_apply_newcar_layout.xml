@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/img_add_item_new_car_pic"
+            android:layout_width="110dp"
+            android:layout_height="90dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/jingzhengu_moren" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="90dp"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/tv_add_item_new_car_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="福特 福克斯两厢 2012款1.6 自动 风尚型"
+                android:textColor="@color/grey_for_valuation" />
+
+            <LinearLayout
+                android:layout_below="@+id/tv_add_item_new_car_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_add_item_new_car_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="17.25万"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/text_red" />
+
+                <TextView
+                    android:id="@+id/tv_add_item_new_car_price_between"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_blue_round_border_white_normal_style"
+                    android:text="补差价3.2万 "
+                    android:padding="5dp"
+                    android:textColor="@color/text_blue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/go" />
+
+                <TextView
+                    android:id="@+id/tv_add_item_new_car_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7523"
+                    android:textColor="@color/dark_grey_text" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_bg" />
+
+</LinearLayout>

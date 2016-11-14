@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/home_fragment_header_height"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+        <com.jzg.jzgoto.phone.view.carmanager.MyCarManagerView
+            android:id="@+id/view_my_car_manager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.jzg.jzgoto.phone.view.carmanager.MyCarAssessmentView
+            android:id="@+id/view_my_car_assessment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" />
+
+        <com.jzg.jzgoto.phone.view.carmanager.MyCarToolInfoView
+            android:id="@+id/view_my_car_tool_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" />
+
+        <com.jzg.jzgoto.phone.view.carmanager.MyFocuseCarView
+            android:id="@+id/view_my_focus_car"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp" />
+
+        <ImageView
+            android:id="@+id/sellcar_loan_apply_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/banner_chediadi"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"/>
+
+        <com.jzg.jzgoto.phone.view.common.InScrollListView
+            android:id="@+id/recommend_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:cacheColorHint="@color/background"
+            android:background="@color/background"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:listSelector="@drawable/common_listview_selector"
+            android:overScrollMode="never"
+            android:persistentDrawingCache="scrolling"
+            android:smoothScrollbar="true"/>
+
+    </LinearLayout>
+</ScrollView>

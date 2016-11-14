@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+	<item name="provinceList" type="id"/>
+	<item name="cityList" type="id"/>
+	<item name="modifyCity" type="id"/>
+	<item name="close_dialog" type="id"/>
+	<item name="net_error_back" type="id"/>
+
+	<item name="car_life_news_suc" type="id"/>
+	<item name="car_life_news_fail" type="id"/>
+	<item name="is_comment_suc" type="id"/><!-- 是否已经评论-成功 -->
+	<item name="is_comment_fail" type="id"/><!-- 是否已经评论-失败 -->
+	<item name="comment_suc" type="id"/><!-- 评论-成功 -->
+	<item name="comment_fail" type="id"/><!-- 评论-失败 -->
+	<item name="del_list_suc" type="id"/><!-- 删除评估历史-成功 -->
+	<item name="del_list_fail" type="id"/><!-- 删除评估历史-失败 -->
+
+	<item name="net_error" type="id"/>
+
+
+	<item name="tools_xq_city_request" type="id"/>
+	<item name="request_buy_car_list" type="id"/>
+	<item name="request_buy_car_detail" type="id"/>
+	<item name="request_buy_car_compare" type="id"/>
+	<item name="request_buy_car_addconcern" type="id"/>
+	<item name="request_buy_car_delconcern" type="id"/>
+	<item name="request_buy_car_concernlist" type="id"/>
+	<item name="request_my_recomand_list" type="id"/>
+	<item name="request_my_similar_list" type="id"/>
+	<item name="request_save_search_keywords" type="id"/>
+	<item name="request_buy_car_detail_bargain" type="id"/>
+	<item name="request_valuation_buycar_detail" type="id"/>
+	<item name="request_valuation_sellcar_detail" type="id"/>
+	<item name="request_valuation_recommend_list" type="id"/>
+	<item name="request_buy_car_add_condition" type="id"/>
+	<item name="request_valuation_sell_add_myCar" type="id"/>
+
+	<item name="getBitmapByUrl" type="id"/>
+	<item name="change_buy_car_compare" type="id"/>
+
+	<item name="getAutoComTextSuc" type="id"/>
+	<item name="city_suc" type="id"/>
+	<item name="city_fail" type="id"/>
+
+	<item name="sell_valuation_suc" type="id"/>
+	<item name="sell_valuation_fail" type="id"/>
+
+	<item name="sell_car_suc" type="id"/>
+	<item name="sell_car_fail" type="id"/>
+
+	<item name="request_val_banner" type="id"/>
+	<item name="request_val_buy_result" type="id"/>
+	<item name="request_val_sell_result" type="id"/>
+	<item name="request_val_sell_tuijian_list" type="id"/>
+	<item name="request_val_sell_koubei_list" type="id"/>
+	<item name="request_val_sell_koubei_zan" type="id"/>
+	<item name="request_val_sell_history_deal" type="id"/>
+	<item name="request_val_sell_tips" type="id"/>
+	<item name="request_syn_val_history" type="id"/>
+
+	<item name="del_tag_refresh" type="id"/>
+</resources>

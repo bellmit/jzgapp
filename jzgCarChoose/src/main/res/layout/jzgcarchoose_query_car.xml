@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:widget="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/valuation_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/table_height"
+        android:background="@color/title_bg"
+        android:padding="10dp" >
+
+        <!-- 返回按钮，可以隐藏 -->
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:onClick="query_car_left_back" >
+
+            <TextView
+                android:id="@+id/query_car_left_back"
+                style="@style/common_white_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="关闭" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_title_center_text"
+            style="@style/common_white_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择车型" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/chooseLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange2"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dip"
+            android:text="已选择"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="2dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/index_car_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@drawable/jzgcarchoose_split_line1"
+                android:dividerHeight="@dimen/split_line"
+                android:paddingRight="5dip"
+                android:scrollbars="none" />
+        </LinearLayout>
+
+        <com.jzg.pricechange.phone.JzgCarChooseMyLetterListView
+            android:id="@+id/index_car_index_list"
+            android:layout_width="30dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:background="#40000000" />
+
+        <SlidingDrawer
+            android:id="@+id/index_car_type_drawer"
+            android:layout_width="306dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:content="@+id/index_car_type_list_content_layout"
+            android:handle="@+id/index_car_type_handle"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@id/index_car_type_handle"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:alpha="0.0"
+                android:background="@drawable/jzgcarchoose_shadow_long"
+                android:visibility="gone" >
+            </ImageView>
+
+            <LinearLayout
+                android:id="@id/index_car_type_list_content_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ImageView
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/jzgcarchoose_shadow_long" >
+                </ImageView>
+
+                <ListView
+                    android:id="@+id/index_car_type_list_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/jzgcarchoose_bg_white"
+                    android:divider="@drawable/jzgcarchoose_split_line1"
+                    android:dividerHeight="@dimen/split_line"
+                    android:listSelector="@drawable/jzgcarchoose_layout_click"
+                    android:paddingRight="5dip"
+                    android:scrollbars="none" >
+                </ListView>
+            </LinearLayout>
+        </SlidingDrawer>
+
+        <SlidingDrawer
+            android:id="@+id/index_car_yearstyle_drawer"
+            android:layout_width="227dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:content="@+id/index_car_yearstyle_content_layout"
+            android:handle="@+id/index_car_yearstyle_handle"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@id/index_car_yearstyle_handle"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:visibility="gone" >
+            </ImageView>
+
+            <LinearLayout
+                android:id="@id/index_car_yearstyle_content_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ImageView
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/jzgcarchoose_shadow_long" >
+                </ImageView>
+
+                <ListView
+                    android:id="@+id/index_car_yearstyle_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/jzgcarchoose_bg_white"
+                    android:divider="@drawable/jzgcarchoose_split_line1"
+                    android:dividerHeight="@dimen/split_line"
+                    android:paddingRight="5dip"
+                    android:scrollbars="none" >
+                </ListView>
+            </LinearLayout>
+        </SlidingDrawer>
+    </RelativeLayout>
+
+</LinearLayout>

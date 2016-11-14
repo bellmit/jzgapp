@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<com.jzg.jzgoto.phone.view.shared.HeadBar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:barTitle="卖车"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/background">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_sellcar"
+                android:scaleType="fitXY"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:id="@+id/sell_truck_carStyle_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:id="@+id/sell_truck_carStyle_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/jzg_common_small_size"
+                        android:textColor="@color/dark_grey_text"
+                        android:layout_centerVertical="true"
+                        android:text="品牌车型" />
+
+                    <TextView
+                        android:id="@+id/sell_truck_carStyle_show_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:drawableRight="@drawable/go"
+                        android:drawablePadding="5dip"
+                        android:layout_toRightOf="@id/sell_truck_carStyle_textView"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:hint="请选择车辆信息 "
+                        android:textSize="@dimen/jzg_common_small_size"
+                        android:textColor="@color/dark_grey_text"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dip"
+                    android:background="@color/line_bg"/>"
+                <RelativeLayout
+                    android:id="@+id/sell_truck_carRegDate_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:id="@+id/sell_truck_carRegDate_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/jzg_common_small_size"
+                        android:textColor="@color/dark_grey_text"
+                        android:layout_centerVertical="true"
+                        android:text="上牌时间" />
+
+                    <TextView
+                        android:id="@+id/sell_truck_carRegDate_show_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:drawableRight="@drawable/go"
+                        android:drawablePadding="5dip"
+                        android:layout_toRightOf="@id/sell_truck_carRegDate_textView"
+                        android:gravity="right"
+                        android:textSize="@dimen/jzg_common_small_size"
+                        android:textColor="@color/dark_grey_text"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dip"
+                    android:background="@color/line_bg"/>
+                <RelativeLayout
+                    android:id="@+id/valuation_carMileage_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:id="@+id/sell_truck_carMileage_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/jzg_common_small_size"
+                        android:textColor="@color/dark_grey_text"
+                        android:layout_centerVertical="true"
+                        android:text="行驶里程" />
+                    <TextView
+                        android:id="@+id/sell_truck_carMileage_right_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/jzg_common_small_size"
+                        android:textColor="@color/dark_grey_text"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:text="万公里" />
+                    <EditText
+                        android:id="@+id/sell_truck_carMileage_show_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/sell_truck_carMileage_textView"
+                        android:layout_toLeftOf="@id/sell_truck_carMileage_right_textView"
+                        android:layout_marginRight="10dp"
+                        android:hint="请输入"
+                        android:gravity="right"
+                        android:background="@color/white"
+                        android:textSize="@dimen/jzg_common_small_size"
+                        android:inputType="numberDecimal"
+                        android:maxLength="6"
+                        android:textColor="@color/dark_grey_text"/>
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dip"
+                    android:background="@color/line_bg"/>
+                <RelativeLayout
+                    android:id="@+id/sell_truck_city_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:id="@+id/sell_truck_city_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/jzg_common_small_size"
+                        android:textColor="@color/dark_grey_text"
+                        android:layout_centerVertical="true"
+                        android:text="所在城市" />
+
+                    <TextView
+                        android:id="@+id/sell_truck_show_city_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:drawableRight="@drawable/go"
+                        android:drawablePadding="5dip"
+                        android:layout_toRightOf="@id/sell_truck_city_textView"
+                        android:gravity="right"
+                        android:textSize="@dimen/jzg_common_small_size"
+                        android:textColor="@color/dark_grey_text"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dip"
+                    android:background="@color/line_bg"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/expect_price_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:id="@+id/expect_price_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/jzg_common_small_size"
+                        android:textColor="@color/dark_grey_text"
+                        android:layout_centerVertical="true"
+                        android:text="预期售价" />
+                    <TextView
+                        android:id="@+id/tv_units"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/jzg_common_small_size"
+                        android:textColor="@color/dark_grey_text"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:text="万" />
+                    <EditText
+                        android:id="@+id/expect_price_show_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/expect_price_textView"
+                        android:layout_toLeftOf="@id/tv_units"
+                        android:layout_marginRight="10dp"
+                        android:hint="请输入"
+                        android:gravity="right"
+                        android:background="@color/white"
+                        android:textSize="@dimen/jzg_common_small_size"
+                        android:inputType="numberDecimal"
+                        android:maxLength="6"
+                        android:textColor="@color/dark_grey_text"/>
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dip"
+                    android:background="@color/line_bg"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:orientation="horizontal"
+                    >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/jzg_common_small_size"
+                    android:textColor="@color/dark_grey_text"
+                    android:layout_centerVertical="true"
+                    android:text="精真估估值" />
+                <TextView
+                    android:id="@+id/tvresult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/jzg_common_small_size"
+                    android:textColor="@color/grey1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/btn_buy_onekey_sell_truck"
+                        style="@style/BorderBlueFillWhiteTextBlueStyle1"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:text="一键卖车" />
+
+                    <TextView
+                        android:id="@+id/btn_buy_replacement"
+                        style="@style/BorderBlueFillWhiteTextBlueStyle"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:text="置换新车" />
+                    <TextView
+                        android:id="@+id/btn_buy_detailed_valuation"
+                        style="@style/BorderBlueFillWhiteTextBlueStyle"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:text="详细估值" />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/dark_grey_text"
+                    android:layout_centerVertical="true"
+                    android:padding="15dp"
+                    android:text="提交卖车后，车辆将自动添加至您的车库"
+                    />
+            <ImageView
+                android:id="@+id/sellcar_loan_apply_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/banner_chediadi"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

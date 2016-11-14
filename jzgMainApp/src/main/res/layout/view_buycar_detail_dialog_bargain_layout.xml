@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/buycar_detail_dialog_bargain_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/icon_cle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/white_dialog_bg"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="40dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/jzg_common_small_size"
+            android:textColor="@color/dark_grey_text"
+            android:text="我们将帮您联系车主，协商砍价"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_grey_text"
+                android:textSize="@dimen/jzg_common_size"
+                android:text="车主报价："/>
+            <TextView
+                android:id="@+id/buycar_detail_dialog_bargain_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_red"
+                android:textSize="@dimen/jzg_common_size"
+                android:text="13.67万"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/buycar_detail_dialog_bargain_expectedPrice_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="万"
+                android:textColor="@color/dark_grey_text"
+                android:textSize="@dimen/jzg_common_size"
+                android:layout_alignParentRight="true"/>
+            <TextView
+                android:id="@+id/buycar_detail_dialog_bargain_expectedPrice_Left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预期价"
+                android:textColor="@color/dark_grey_text"
+                android:textSize="@dimen/jzg_common_size"
+                android:layout_alignParentLeft="true"/>
+            <EditText
+                android:id="@+id/buycar_detail_dialog_bargain_expectedPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:singleLine="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:hint="输入您的意向价"
+                android:maxLength="11"
+                android:inputType="numberDecimal"
+                android:textColor="@color/dark_grey_text"
+                android:textSize="@dimen/jzg_common_size"
+                android:layout_toRightOf="@id/buycar_detail_dialog_bargain_expectedPrice_Left"
+                android:layout_toLeftOf="@id/buycar_detail_dialog_bargain_expectedPrice_right"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/line_bg"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/dark_grey_text"
+                android:textSize="@dimen/jzg_common_size"
+                android:text="手机号"/>
+            <EditText
+                android:id="@+id/buycar_detail_dialog_bargain_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:layout_marginLeft="10dp"
+                android:inputType="numberDecimal"
+                android:hint="请输入手机号"
+                android:textColor="@color/dark_grey_text"
+                android:textSize="@dimen/jzg_common_size"
+                android:background="@color/white"
+                android:maxLength="11"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/line_bg"/>
+        <Button
+            android:id="@+id/buycar_detail_dialog_bargain_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="提交"
+            android:layout_margin="20dp"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:background="@drawable/btn_blue_round_normal_style" />
+    </LinearLayout>
+</RelativeLayout>

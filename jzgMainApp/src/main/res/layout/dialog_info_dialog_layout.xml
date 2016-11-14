@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_info_bg"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:gravity="center"
+    android:paddingRight="20dp" >
+
+    <LinearLayout
+        android:id="@+id/loading_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center" >
+
+        <com.jzg.jzgoto.phone.view.common.ImageProgressBar
+            android:layout_width="19dp"
+            android:layout_height="19dp" />
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/loaded_message_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textIsSelectable="false"
+        android:textSize="14sp"
+        android:text="处理中..."
+        android:textColor="@color/white"
+        android:includeFontPadding="false" />
+
+</LinearLayout>

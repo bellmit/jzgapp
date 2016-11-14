@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2011 Johan Nilsson <http://markupartist.com>
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+
+   
+
+    <!-- 圆视图 -->
+    <declare-styleable name="CircularImageView">
+        <attr name="border" format="boolean"></attr>
+        <attr name="border_width" format="dimension"></attr>
+        <attr name="border_color" format="color"></attr>
+        <attr name="shadow" format="boolean"></attr>
+    </declare-styleable>
+    <declare-styleable name="Theme">
+        <attr name="circularImageViewStyle" format="reference"></attr>
+    </declare-styleable>
+ <!-- 横向滚动列表 Defines the custom XML attributes supported for a HorizontalListView -->
+    <declare-styleable name="HorizontalListView">
+        <attr name="divider_Width" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+	
+	<declare-styleable name="HeadBar">
+        <attr name="leftButton">
+            <enum name="none" value="0" />
+            <enum name="back" value="1" />
+            <enum name="text" value="3" />
+            <enum name="close" value="4" />
+        </attr>
+        <attr name="rightButton">
+            <enum name="none" value="0" />
+            <enum name="search" value="1" />
+            <enum name="setting" value="2" />
+            <enum name="share" value="3" />
+            <enum name="text" value="4" />
+            <enum name="cancel" value="5" />
+        </attr>
+        <attr name="barTitle" format="string" />
+        <attr name="leftButtonText" format="string" />
+        <attr name="rightButtonText" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="MenuItemView">
+        <attr name="menuIcon" format="reference" />
+        <attr name="menuTitle" format="string" />
+    </declare-styleable>
+
+
+    <declare-styleable name="FlowLayout">
+        <attr name="orientation" format="enum">
+            <enum name="horizontal" value="2"/>
+            <enum name="vertical" value="3"/>
+        </attr>
+
+        <attr name="gravity" format="enum">
+            <enum name="left" value="1"/>
+            <enum name="center" value="2"/>
+            <enum name="right" value="3"/>
+            <enum name="top" value="4"/>
+            <enum name="bottom" value="5"/>
+        </attr>
+
+        <attr name="horizontalSpacing" format="dimension"/>
+        <attr name="verticalSpacing" format="dimension"/>
+        <attr name="childHorizontalSpacing" format="dimension"/>
+        <attr name="childVerticalSpacing" format="dimension"/>
+        <attr name="weight" format="integer"/>
+        <attr name="lineNum" format="integer"/>
+        <attr name="flow_efficient_mode" format="boolean"/>
+
+    </declare-styleable>
+
+</resources>

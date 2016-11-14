@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@color/background" >
+
+	<ListView
+		android:id="@+id/homefragment_listview"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:cacheColorHint="@color/background"
+		android:background="@color/background"
+		android:divider="@color/background"
+		android:dividerHeight="0dp"
+		android:fadingEdge="none"
+		android:fadingEdgeLength="0dp"
+		android:listSelector="@drawable/common_listview_selector"
+		android:overScrollMode="never"
+		android:persistentDrawingCache="scrolling"
+		android:smoothScrollbar="true"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true" />
+</RelativeLayout>

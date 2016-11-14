@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/buycar_search_titleLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/view_shared_headbar_height"
+        android:background="@color/header_bar_bg">
+        <TextView
+            android:id="@+id/buycar_search_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            style="@style/common_white_text_style"
+            android:text="取消"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_centerVertical="true" />
+
+        <RelativeLayout
+            android:id="@+id/buycar_search_Editlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dip"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="5dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/white_search_layout_bg"
+            android:layout_toLeftOf="@id/buycar_search_cancel" >
+
+            <ImageView
+                android:id="@+id/buycar_search_hintImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_search"/>
+            <ImageView
+                android:id="@+id/buycar_search_clearEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_quxiao"
+                android:visibility="invisible"/>
+            <EditText
+                android:id="@+id/buycar_search_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style = "@style/small_text_size"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:imeOptions="actionSearch"
+                android:clickable="false"
+                android:singleLine="true"
+                android:paddingLeft="5dip"
+                android:textColor="@color/text_filter_darkgrey"
+                android:hint="请输入汽车品牌 、型号、或拼音"
+                android:layout_toRightOf="@id/buycar_search_hintImg"
+                android:layout_toLeftOf="@id/buycar_search_clearEdit"
+                android:background="@color/white"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_bg"/>
+    <RelativeLayout
+        android:id="@+id/buycar_search_viewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/menu_backgroud"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <com.jzg.jzgoto.phone.view.menu.MenuItemView
+        android:id="@+id/menu_item_message_center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_item_height"
+        custom:menuIcon="@drawable/menu_item_message_center_selector"
+        custom:menuTitle="@string/menu_item_message_center" />
+
+    <com.jzg.jzgoto.phone.view.menu.MenuItemView
+        android:id="@+id/menu_item_lastest_activity"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_item_height"
+        android:layout_marginTop="@dimen/menu_item_margin"
+        custom:menuIcon="@drawable/menu_item_latest_activity_selector"
+        custom:menuTitle="@string/menu_item_latest_activity" />
+
+    <com.jzg.jzgoto.phone.view.menu.MenuItemView
+        android:id="@+id/menu_item_subscribe_car_source"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_item_height"
+        android:layout_marginTop="@dimen/menu_item_margin"
+        custom:menuIcon="@drawable/menu_item_subscribe_carsource_selector"
+        custom:menuTitle="@string/menu_item_subscribe_car_source" />
+
+    <com.jzg.jzgoto.phone.view.menu.MenuItemView
+        android:id="@+id/menu_item_focus_on_car_source"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_item_height"
+        android:layout_marginTop="@dimen/menu_item_margin"
+        custom:menuIcon="@drawable/menu_item_focus_carsource_selector"
+        custom:menuTitle="@string/menu_item_focus_on_car_source" />
+
+    <com.jzg.jzgoto.phone.view.menu.MenuItemView
+        android:id="@+id/menu_item_latest_news"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_item_height"
+        android:layout_marginTop="@dimen/menu_item_margin"
+        custom:menuIcon="@drawable/menu_item_news_selector"
+        custom:menuTitle="@string/menu_item_latest_news" />
+
+    <com.jzg.jzgoto.phone.view.menu.MenuItemView
+        android:id="@+id/menu_item_query_offence"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_item_height"
+        android:layout_marginTop="@dimen/menu_item_margin"
+        custom:menuIcon="@drawable/menu_item_query_offence_selector"
+        custom:menuTitle="@string/menu_item_query_offence" />
+
+    <com.jzg.jzgoto.phone.view.menu.MenuItemView
+        android:id="@+id/menu_item_car_replacement"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_item_height"
+        android:layout_marginTop="@dimen/menu_item_margin"
+        custom:menuIcon="@drawable/menu_item_replace_car_selector"
+        custom:menuTitle="@string/menu_item_car_replacement" />
+
+    <com.jzg.jzgoto.phone.view.menu.MenuItemView
+        android:id="@+id/menu_item_car_sell_progress"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_item_height"
+        android:layout_marginTop="@dimen/menu_item_margin"
+        custom:menuIcon="@drawable/menu_item_sell_progress_selector"
+        custom:menuTitle="@string/menu_item_car_sell_progress"
+        android:visibility="gone"/>
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="black_font">#ff000000</color>
+
+	<!-- jzg_color -->
+	<!-- 背景颜色-->
+    <color name="background">#f0f3f8</color>
+	<!-- 标题背景颜色-->
+    <color name="jzg_title_bg">#fafbfd</color>
+    <!-- Tab背景颜色-->
+    <color name="background_tab">#f9f9f9</color>
+    <!-- 蓝色字体-->
+    <color name="text_blue">#008FED</color>
+    <!-- 标题黑色字体-->
+    <color name="text_title_black">#2C2D2C</color>
+    <!-- 筛选深灰色字体-->
+    <color name="text_filter_darkgrey">#444443</color>
+    <!-- 浅灰色字体-->
+    <color name="text_item_lightgrey">#94918C</color>
+    <!-- 红色字体-->
+    <color name="text_red">#FF2100</color>
+    <!-- 文字颜色 -->
+    <color name="dialog_text_color">#ff31455f</color>
+    <!-- 横线颜色值 -->
+    <color name="line_bg">#EBEAEA</color>
+    <!-- 月使用成本 -->
+    <color name="circle_zhejiu">#209DDA</color>
+    <!-- 月使用成本 -->
+    <color name="circle_ranyou">#00BFAE</color>
+    <!-- 月使用成本 -->
+    <color name="circle_baoxian">#FFBB54</color>
+    <!-- 月使用成本 -->
+    <color name="circle_baoyang">#F66981</color>
+    <!-- 月使用成本 -->
+    <color name="circle_shuifei">#00B4E7</color>
+    
+    <!-- 列表商家字体颜色-->
+    <color name="text_item_business">#008FED</color>
+     <!-- 列表个人字体颜色-->
+    <color name="text_item_personal">#00B36A</color>
+    
+     <!-- 买车详情贷款置灰颜色-->
+    <color name="text_cannot_press">#14540253</color>
+    
+    
+    <!-- Title 蓝色字体颜色-->
+    <color name="text_color_title_blue">#005EB1</color>
+    <!-- 保值率字体颜色 -->
+    <color name="red_for_valuation">#ff6c3d</color>
+    <color name="grey_for_valuation">#9c9c9c</color>
+    <color name="yellow_for_valuation">#ffcc00</color>
+    <color name="orange_for_valuation">#ffa912</color>
+    <color name="bg_for_valuation">#f0f3f8</color>
+    <color name="line_for_valuation">#dadee6</color>
+    <color name="blue_for_valuation">#479cf3</color>
+    <color name="green_for_valuation">#86c226</color>
+    <color name="blue_edit_for_valuation">#4774b8</color>
+    <color name="text_for_valuation">#3c3c3c</color>
+    <color name="text2_for_valuation">#6c6c6c</color>
+    <color name="text3_for_valuation">#9c9c9c</color>
+    <color name="red_text_for_valuation">#ff643b</color>
+    
+	<color name="bg_org_val_jiagequshi">#FF6029</color>
+    <color name="blue">#4790ef</color>
+
+    <!-- commone color -->
+    <color name="commone_blue_normal_color">#5087e3</color>
+    <color name="commone_blue_pressed_color">#2d69ce</color>
+    <color name="commone_disabled_color">#dddddd</color>
+    <color name="commone_main_title_color">#111111</color>
+    <color name="commone_minor_title_color">#3c3c3c</color>
+
+    <!-- hander bar -->
+    <color name="header_disenable_color">#66FFFFFF</color>
+    <color name="header_white_color">#F8F8F8</color>
+    <color name="header_white_line_color">#FFDFDFDF</color>
+    <color name="header_btn_text_color">#FFFFFFFF</color>
+    <color name="header_btn_text_color_pressed">#66FFFFFF</color>
+    <color name="header_bar_bg">#115B9D</color>
+    <color name="header_title_text_color">#ffffff</color>
+    <color name="header_title_text_color_disable">#66ffffff</color>
+
+    <!-- common button background color -->
+    <color name="button_blue_border_color">#FF0099FF</color>
+    <color name="button_bg_disabled_color">#dddddd</color>
+    <color name="button_border_disabled_color">#dddddd</color>
+    <color name="blue_button_bg_normal_color">#438ef2</color>
+    <color name="blue_button_bg_pressed_color">#438ef2</color>
+    <color name="white_button_bg_normal_color">#ffffff</color>
+    <color name="white_button_bg_pressed_color">#ffffff</color>
+    <color name="orange_button_bg_normal_color">#ff7700</color>
+    <color name="orange_button_bg_pressed_color">#ff7700</color>
+
+    <!-- common list color -->
+    <color name="listview_pressed_color">#FFEAEAEA</color>
+    <color name="common_line_bg">#FFE8E8E8</color>
+
+    <!-- user color -->
+    <color name="user_center_user_image_bg_color">#0099ff</color>
+
+    <!-- menu -->
+    <color name="menu_backgroud">#f0f3f8</color>
+    <color name="menu_item_line_backgroud">#d1d1d1</color>
+    <color name="menu_item_text_color_normal">#333333</color>
+    <color name="menu_item_text_color_selected">#333333</color>
+    <color name="menu_item_selected_color">#333333</color>
+
+    <!-- car info -->
+    <color name="car_info_item_title_color">#3c3c3c</color>
+    <color name="car_info_item_hint_color">#999999</color>
+
+    <color name="buy_car_number_btn_color">#E1DFDA</color>
+
+    <color name="buy_car_detail_darkblue_color">#3C4E61</color>
+    <color name="buy_car_detail_lightblue_color">#1A6EC4</color>
+
+    <!-- home activity -->
+    <color name="home_header_bar_bg_color">#305ba4</color>
+
+    
+</resources>

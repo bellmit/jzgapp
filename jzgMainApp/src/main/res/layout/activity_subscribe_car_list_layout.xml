@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/background"
+	android:orientation="vertical" >
+
+	<com.jzg.jzgoto.phone.view.shared.HeadBar
+		android:id="@+id/header_headbar"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/view_shared_headbar_height"
+		custom:barTitle="订阅"
+		custom:leftButton="back"
+		custom:rightButton="none" />
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<fragment
+			android:id="@+id/my_car_list_fragment"
+			android:name="com.jzg.jzgoto.phone.fragment.user.SubscribeCarListFragment"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" >
+		</fragment>
+	</FrameLayout>
+</LinearLayout>

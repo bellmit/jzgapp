@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <com.jzg.jzgoto.phone.view.shared.HeadBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:barTitle="新车置换" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/long_line" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 第一部分 -->
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/xczh_banner" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/common_text_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="您的爱车"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/text_blue" />
+
+                <com.jzg.jzgoto.phone.view.replacecar.MyNoClickLinearLayout
+                    android:id="@+id/linear_replace_main_carstyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        style="@style/small_text_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="品牌车型"
+                        android:textColor="@color/grey3" />
+
+                    <EditText
+                        android:id="@+id/edit_replace_main_carstyle_name"
+                        style="@style/edit_sell_bg"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:editable="false"
+                        android:gravity="right"
+                        android:hint="请选择品牌车型"
+                        android:singleLine="true"
+                        android:textColor="@color/grey3" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:src="@drawable/go" />
+
+                </com.jzg.jzgoto.phone.view.replacecar.MyNoClickLinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_bg" />
+
+                <com.jzg.jzgoto.phone.view.replacecar.MyNoClickLinearLayout
+                    android:id="@+id/linear_replace_main_plate_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        style="@style/small_text_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="上牌时间"
+                        android:textColor="@color/grey3" />
+
+                    <EditText
+                        android:id="@+id/edit_replace_main_plate_num_value"
+                        style="@style/edit_sell_bg"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:hint="请选择上牌时间"
+                        android:paddingRight="5dp"
+                        android:singleLine="true"
+                        android:textColor="@color/grey3" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:src="@drawable/go" />
+
+                </com.jzg.jzgoto.phone.view.replacecar.MyNoClickLinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_bg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        style="@style/small_text_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="行驶公里"
+                        android:textColor="@color/grey3" />
+
+                    <EditText
+                        android:id="@+id/edit_replace_main_mile"
+                        style="@style/edit_sell_bg"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:hint="请输入公里数"
+                        android:inputType="numberDecimal"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:textColor="@color/grey3" />
+
+                    <TextView
+                        style="@style/small_text_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="万公里"
+                        android:textColor="@color/grey3" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_bg" />
+
+                <com.jzg.jzgoto.phone.view.replacecar.MyNoClickLinearLayout
+                    android:id="@+id/linear_replace_main_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        style="@style/small_text_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="上牌地区"
+                        android:textColor="@color/grey3" />
+
+                    <EditText
+                        android:id="@+id/edit_replace_main_address_name"
+                        style="@style/edit_sell_bg"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:editable="false"
+                        android:gravity="right"
+                        android:hint="请选择地区"
+                        android:paddingRight="5dp"
+                        android:singleLine="true"
+                        android:textColor="@color/grey3" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:src="@drawable/go" />
+
+                </com.jzg.jzgoto.phone.view.replacecar.MyNoClickLinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/view_replace_newcar_styleinclude_layout" />
+
+            <include layout="@layout/view_replace_newcar_brandinclude_layout" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

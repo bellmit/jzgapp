@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <View
+        android:id="@+id/view_bottom_out_listview"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/dialog_bg_half_color"/>
+    <RelativeLayout
+        android:layout_above="@id/view_bottom_out_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/index_car_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@color/line_bg"
+                android:dividerHeight="@dimen/split_line"
+                android:paddingRight="5dip"
+                android:scrollbars="none" />
+        </LinearLayout>
+
+        <com.jzg.pricechange.phone.JzgCarChooseMyLetterListView
+            android:id="@+id/index_car_index_list"
+            android:layout_width="30dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:background="#40000000" />
+
+        <SlidingDrawer
+            android:id="@+id/index_car_type_drawer"
+            android:layout_width="306dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:content="@+id/index_car_type_list_content_layout"
+            android:handle="@+id/index_car_type_handle"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@id/index_car_type_handle"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:alpha="0.0"
+                android:background="@color/line_bg"
+                android:visibility="gone" >
+            </ImageView>
+
+            <LinearLayout
+                android:id="@id/index_car_type_list_content_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ImageView
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:background="@color/line_bg" >
+                </ImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/white"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:clickable="true"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        >
+                        <ImageView
+                            android:id="@+id/make_logo_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/jzgcarchoose_jingzhengu"
+                            />
+                        <TextView
+                            android:id="@+id/make_name_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="品牌"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/black_font"
+                            />
+                    </LinearLayout>
+                    <View android:layout_width="match_parent"
+                        android:layout_height="@dimen/split_line"
+                        android:background="@color/line_bg"/>
+                    <ListView
+                        android:id="@+id/index_car_type_list_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@color/white"
+                        android:divider="@color/line_bg"
+                        android:dividerHeight="@dimen/split_line"
+                        android:listSelector="@drawable/layout_click"
+                        android:paddingRight="5dip"
+                        android:scrollbars="none" >
+                    </ListView>
+                </LinearLayout>
+            </LinearLayout>
+        </SlidingDrawer>
+
+        <SlidingDrawer
+            android:id="@+id/index_car_yearstyle_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="150dip"
+            android:layout_alignParentRight="true"
+            android:content="@+id/index_car_yearstyle_content_layout"
+            android:handle="@+id/index_car_yearstyle_handle"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@id/index_car_yearstyle_handle"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:visibility="gone" >
+            </ImageView>
+
+            <LinearLayout
+                android:id="@id/index_car_yearstyle_content_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ImageView
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:background="@color/line_bg" >
+                </ImageView>
+
+                <ListView
+                    android:id="@+id/index_car_yearstyle_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white"
+                    android:divider="@color/line_bg"
+                    android:dividerHeight="@dimen/split_line"
+                    android:paddingRight="5dip"
+                    android:scrollbars="none" >
+                </ListView>
+            </LinearLayout>
+        </SlidingDrawer>
+    </RelativeLayout>
+</RelativeLayout>

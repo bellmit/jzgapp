@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <com.jzg.jzgoto.phone.view.shared.HeadBar
+        android:id="@+id/custom_webview_headbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_shared_headbar_height"
+        custom:leftButton="back"
+        custom:rightButton="none" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.jzg.jzgoto.phone.view.webview.VideoEnabledWebView
+            android:id="@+id/custom_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:id="@+id/custom_full_video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+</LinearLayout>

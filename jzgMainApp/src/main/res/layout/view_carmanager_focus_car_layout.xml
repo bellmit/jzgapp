@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/bg_grey"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="您关注的车"
+            android:textColor="@color/black_font"
+            android:textSize="@dimen/jzg_common_small_size" />
+
+        <TextView
+            android:id="@+id/btn_focus_car_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="管理"
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/jzg_common_small_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_focus_car_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <com.jzg.jzgoto.phone.view.common.InScrollExpandableListView
+            android:id="@+id/focus_car_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:childDivider="@android:color/transparent"
+            android:divider="@color/common_line_bg"
+            android:dividerHeight="0px"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:groupIndicator="@null"
+            android:listSelector="@android:color/transparent"
+            android:overScrollMode="never" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_focus_car_empty_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.jzg.jzgoto.phone.view.carmanager.MyCarRecommendCarBannerView
+                android:id="@+id/replacement_car_banner_view"
+                android:layout_width="match_parent"
+                android:layout_height="155dp" />
+
+            <TextView
+                android:id="@+id/btn_add_focus_car"
+                style="@style/FillBlueTextWhiteStyle"
+                android:layout_width="290dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:text="添加您关注的车型"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp"
+                android:text="定制专属首页"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/car_replace_recommend_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textColor="#666666"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</LinearLayout>

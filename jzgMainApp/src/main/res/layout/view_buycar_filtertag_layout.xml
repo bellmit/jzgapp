@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:background="@color/background">
+    <TextView
+        android:id="@+id/view_buycar_filtertag_subscribe_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="订阅"
+        android:drawableLeft="@drawable/dingyue"
+        android:paddingTop="10dip"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        style="@style/small_text_size"
+        android:visibility="gone"
+        android:textColor="@color/text_color_title_blue"/>
+    <com.jzg.jzgoto.phone.view.buy.TagFlowLayout
+        android:id="@+id/view_buycar_flterTag_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:layout_marginRight="15dip"
+        android:layout_toLeftOf="@id/view_buycar_filtertag_subscribe_TextView"/>
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/view_shared_headbar_height">
+		<com.jzg.jzgoto.phone.view.shared.HeadBar
+			android:id="@+id/header_headbar"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/view_shared_headbar_height"
+			custom:leftButton="back"
+			custom:rightButton="none"
+			custom:barTitle="关注的车" />
+		<TextView
+			android:id="@+id/btn_save"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:includeFontPadding="false"
+			android:paddingRight="15dp"
+			android:paddingLeft="15dp"
+			android:text="保存"
+			android:textColor="@color/white"
+			android:textSize="16sp"
+			android:visibility="gone"/>
+	</RelativeLayout>
+
+	<LinearLayout
+		android:id="@+id/view_car_list_container"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<RelativeLayout
+			android:id="@+id/view_list_tab_container"
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:background="@color/background">
+
+			<TextView
+				android:id="@+id/view_list_tab_drag"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="15dp"
+				android:layout_centerVertical="true"
+				android:includeFontPadding="false"
+				android:text="拖动"
+				android:textColor="@color/commone_main_title_color"
+				android:textSize="16sp" />
+
+			<TextView
+				android:id="@+id/view_list_tab_delete"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="100dp"
+				android:layout_centerVertical="true"
+				android:includeFontPadding="false"
+				android:text="删除"
+				android:textColor="@color/commone_main_title_color"
+				android:textSize="16sp" />
+
+			<TextView
+				android:id="@+id/view_list_tab_notice"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="180dp"
+				android:layout_centerVertical="true"
+				android:includeFontPadding="false"
+				android:text="提醒"
+				android:visibility="gone"
+				android:textColor="@color/commone_main_title_color"
+				android:textSize="16sp" />
+
+		</RelativeLayout>
+
+		<com.jzg.jzgoto.phone.view.sellcar.CustomListView
+			android:id="@+id/my_car_list_view"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:dividerHeight="1dp"
+			android:divider="@color/line_bg"
+			android:background="#EEE"
+			/>
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/car_empty_tip_textview"
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:gravity="center"
+		android:layout_marginLeft="@dimen/common_item_margin_left"
+		android:layout_marginRight="@dimen/common_item_margin_right"
+		android:text="@string/car_manager_my_focus_car_empty_tip"
+		android:textColor="@color/commone_main_title_color"
+		android:textSize="16sp"
+		android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/btn_add_car"
+        style="@style/FillBlueTextWhiteStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_button_height"
+        android:layout_marginLeft="@dimen/common_item_margin_left"
+        android:layout_marginRight="@dimen/common_item_margin_right"
+        android:layout_marginTop="20dp"
+        android:text="添加您关注的车型" />
+
+</LinearLayout>
